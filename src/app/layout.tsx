@@ -6,6 +6,8 @@ import { cn } from "@/lib/utils";
 
 const inter = Inter({ subsets: ["latin"] });
 
+export const runtime = "edge";
+
 export const metadata: Metadata = {
   title: "Abhishek Jaiswar - Web Developer",
   description: "Personal Portfolio",
