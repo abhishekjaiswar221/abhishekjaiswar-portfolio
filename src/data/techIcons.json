@@ -1,0 +1,236 @@
+[
+  {
+    "id": 1,
+    "title": "HTML",
+    "imgSrc": "https://www.tech-stack-icons.com/assets/light/html5.svg",
+    "altText": "HTML Logo"
+  },
+  {
+    "id": 2,
+    "title": "CSS",
+    "imgSrc": "https://www.tech-stack-icons.com/assets/light/css3.svg",
+    "altText": "CSS Logo"
+  },
+  {
+    "id": 3,
+    "title": "Bootstrap CSS",
+    "imgSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg",
+    "altText": "Bootstrap CSS Logo"
+  },
+  {
+    "id": 4,
+    "title": "Tailwind CSS",
+    "imgSrc": "https://www.tech-stack-icons.com/assets/light/tailwindcss.svg",
+    "altText": "Tailwind CSS Logo"
+  },
+  {
+    "id": 5,
+    "title": "Shadcn/UI",
+    "imgSrc": "https://www.tech-stack-icons.com/assets/light/shadcnui.svg",
+    "altText": "Shadcn/ui Logo"
+  },
+  {
+    "id": 6,
+    "title": "Radix UI",
+    "imgSrc": "https://www.tech-stack-icons.com/assets/light/radixui.svg",
+    "altText": "Radix UI Logo"
+  },
+  {
+    "id": 7,
+    "title": "Framer Motion",
+    "imgSrc": "https://www.tech-stack-icons.com/assets/light/framer.svg",
+    "altText": "Framer Motion Logo"
+  },
+  {
+    "id": 8,
+    "title": "Javascript",
+    "imgSrc": "https://www.tech-stack-icons.com/assets/light/js.svg",
+    "altText": "Javascript Logo"
+  },
+  {
+    "id": 9,
+    "title": "React JS",
+    "imgSrc": "https://www.tech-stack-icons.com/assets/light/reactjs.svg",
+    "altText": "React JS Logo"
+  },
+  {
+    "id": 10,
+    "title": "Redux JS",
+    "imgSrc": "https://www.tech-stack-icons.com/assets/light/redux.svg",
+    "altText": "Redux JS Logo"
+  },
+  {
+    "id": 11,
+    "title": "Java",
+    "imgSrc": "https://www.tech-stack-icons.com/assets/light/java.svg",
+    "altText": "Java Logo"
+  },
+  {
+    "id": 12,
+    "title": "Mongoose Js",
+    "imgSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongoose/mongoose-original.svg",
+    "altText": "Mongoose Logo"
+  },
+  {
+    "id": 13,
+    "title": "MongoDB",
+    "imgSrc": "https://www.tech-stack-icons.com/assets/light/mongodb.svg",
+    "altText": "MongoDB Logo"
+  },
+  {
+    "id": 14,
+    "title": "MySQL",
+    "imgSrc": "https://www.tech-stack-icons.com/assets/light/mysql.svg",
+    "altText": "MySQL Logo"
+  },
+  {
+    "id": 15,
+    "title": "Canva",
+    "imgSrc": "https://www.tech-stack-icons.com/assets/light/canva.svg",
+    "altText": "Canva Logo"
+  },
+  {
+    "id": 16,
+    "title": "Postman",
+    "imgSrc": "https://www.tech-stack-icons.com/assets/light/postman.svg",
+    "altText": "Postman Logo"
+  },
+  {
+    "id": 17,
+    "title": "Figma",
+    "imgSrc": "https://www.tech-stack-icons.com/assets/light/figma.svg",
+    "altText": "Figma Logo"
+  },
+  {
+    "id": 18,
+    "title": "JetBrains",
+    "imgSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jetbrains/jetbrains-original.svg",
+    "altText": "JetBrains Logo"
+  },
+  {
+    "id": 19,
+    "title": "Netlify",
+    "imgSrc": "https://www.tech-stack-icons.com/assets/light/netlify.svg",
+    "altText": "Netlify Logo"
+  },
+  {
+    "id": 20,
+    "title": "Vercel",
+    "imgSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vercel/vercel-original.svg",
+    "altText": "Vercel Logo"
+  },
+  {
+    "id": 21,
+    "title": "Cloudflare Pages",
+    "imgSrc": "https://www.tech-stack-icons.com/assets/light/cloudflare.svg",
+    "altText": "Cloudflare Pages Logo"
+  },
+  {
+    "id": 22,
+    "title": "Git",
+    "imgSrc": "https://www.tech-stack-icons.com/assets/light/git.svg",
+    "altText": "Git Logo"
+  },
+  {
+    "id": 23,
+    "title": "Github",
+    "imgSrc": "https://www.tech-stack-icons.com/assets/light/github.svg",
+    "altText": "Github Logo"
+  },
+  {
+    "id": 24,
+    "title": "Eslint",
+    "imgSrc": "https://www.tech-stack-icons.com/assets/light/eslint.svg",
+    "altText": "Eslint Logo"
+  },
+  {
+    "id": 25,
+    "title": "Prettier",
+    "imgSrc": "https://www.tech-stack-icons.com/assets/light/prettier.svg",
+    "altText": "Prettier Logo"
+  },
+  {
+    "id": 26,
+    "title": "Vite JS",
+    "imgSrc": "https://www.tech-stack-icons.com/assets/light/vitejs.svg",
+    "altText": "Vite Js Logo"
+  },
+  {
+    "id": 27,
+    "title": "Rollup Js",
+    "imgSrc": "https://www.tech-stack-icons.com/assets/light/rollup.svg",
+    "altText": "Rollup Js Logo"
+  },
+  {
+    "id": 28,
+    "title": "JSON",
+    "imgSrc": "https://www.tech-stack-icons.com/assets/light/json.svg",
+    "altText": "JSON Logo"
+  },
+  {
+    "id": 29,
+    "title": "REST API",
+    "imgSrc": "/logos/restapi.svg",
+    "altText": "REST API Logo"
+  },
+  {
+    "id": 30,
+    "title": "Markdown",
+    "imgSrc": "https://www.tech-stack-icons.com/assets/light/markdown.svg",
+    "altText": "Markdown Logo"
+  },
+  {
+    "id": 31,
+    "title": "Sass",
+    "imgSrc": "https://www.tech-stack-icons.com/assets/light/sass.svg",
+    "altText": "Sass Logo"
+  },
+  {
+    "id": 32,
+    "title": "Zod",
+    "imgSrc": "https://www.tech-stack-icons.com/assets/light/zod.svg",
+    "altText": "Zod Logo"
+  },
+  {
+    "id": 33,
+    "title": "NPM",
+    "imgSrc": "https://www.tech-stack-icons.com/assets/light/npm.svg",
+    "altText": "NPM Logo"
+  },
+  {
+    "id": 34,
+    "title": "PNPM",
+    "imgSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pnpm/pnpm-original.svg",
+    "altText": "PNPM Logo"
+  },
+  {
+    "id": 35,
+    "title": "Yarn",
+    "imgSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/yarn/yarn-original.svg",
+    "altText": "Yarn Logo"
+  },
+  {
+    "id": 36,
+    "title": "VS Code",
+    "imgSrc": "https://www.tech-stack-icons.com/assets/light/vscode.svg",
+    "altText": "VS Code Logo"
+  },
+  {
+    "id": 37,
+    "title": "Webstorm",
+    "imgSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/webstorm/webstorm-original.svg",
+    "altText": "Webstorm Logo"
+  },
+  {
+    "id": 38,
+    "title": "Intellij IDEA",
+    "imgSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/intellij/intellij-original.svg",
+    "altText": "Intellij IDEA Logo"
+  },
+  {
+    "id": 39,
+    "title": "Datagrip",
+    "imgSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/datagrip/datagrip-original.svg",
+    "altText": "Datagrip Logo"
+  }
+]
