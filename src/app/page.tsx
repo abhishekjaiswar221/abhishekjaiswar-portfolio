@@ -1,9 +1,14 @@
-import Image from "next/image";
+import React, { FC } from "react";
+import Hero from "@/components/hero";
 
-export default function Home() {
+const Home: FC = () => {
   return (
     <main>
-      <h1>Home Page</h1>
+      <section id="hero">
+        <Hero />
+      </section>
     </main>
   );
-}
+};
+
+export default Home;

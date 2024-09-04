@@ -24,6 +24,18 @@ const config = {
         linkedin: "var(--linkedin)",
         twitter: "var(--twitter)",
 
+        // Custom Colors
+        primaryColor: "var(--primary-color)",
+        secondaryColor: "var(--secondary-color)",
+        primaryTextColor: "var(--primary-text-color)",
+        secondaryTextColor: "var(--secondary-text-color)",
+        tertiaryTextColor: "var(--tertiary-text-color)",
+        backgroundColor: "var(--background-color)",
+        profileBorderColor: "var(--profile-border-color)",
+        primaryBorderColor: "var(--primary-border-color)",
+        techStackBorderColor: "var(--tech-stack-border-color)",
+        footerColor: "var(--footer-color)",
+
         // Default Colors
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
