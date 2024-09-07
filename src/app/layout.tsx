@@ -1,11 +1,11 @@
 import React from "react";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Noto_Sans } from "next/font/google";
 import "@/styles/globals.css";
 import { cn } from "@/lib/utils";
 import HeaderNavigation from "@/components/layout/headerNavigation";
 
-const inter = Inter({ subsets: ["latin"] });
+const noto_sans = Noto_Sans({ subsets: ["latin"] });
 
 export const runtime = "edge";
 
@@ -24,8 +24,8 @@ export default function RootLayout({ children }: Readonly<RootLayoutProps>) {
       <head />
       <body
         className={cn(
-          "min-h-screen bg-background font-sans antialiased",
-          inter.className
+          "min-h-screen bg-background antialiased",
+          noto_sans.className
         )}
       >
         <HeaderNavigation />
