@@ -33,7 +33,7 @@ import { VisuallyHidden } from "@radix-ui/react-visually-hidden";
 
 const HeaderNavigation: FC = () => {
   return (
-    <header className="text-primaryTextColor sticky top-0 z-10 flex w-full items-center justify-between bg-white bg-opacity-30 px-6 py-4 shadow-md backdrop-blur-lg backdrop-filter md:px-10 lg:px-20 xl:px-32">
+    <header className="sticky top-0 z-10 flex w-full items-center justify-between bg-white bg-opacity-30 px-6 py-4 shadow-md backdrop-blur-lg backdrop-filter md:px-10 lg:px-20 xl:px-32">
       {/* Desktop Navigation */}
       <div>
         <Button asChild className="flex items-center justify-center gap-1 p-2">
@@ -50,7 +50,7 @@ const HeaderNavigation: FC = () => {
               asChild
               className={cn(
                 navigationMenuTriggerStyle(),
-                "hover:text-secondaryColor hover:bg-transparent focus:bg-transparent"
+                "hover:bg-transparent focus:bg-transparent"
               )}
             >
               <Link href="/">Home</Link>
@@ -61,7 +61,7 @@ const HeaderNavigation: FC = () => {
               asChild
               className={cn(
                 navigationMenuTriggerStyle(),
-                "hover:text-secondaryColor hover:bg-transparent focus:bg-transparent"
+                "hover:bg-transparent focus:bg-transparent"
               )}
             >
               <Link href="#skills">Skills</Link>
@@ -72,7 +72,7 @@ const HeaderNavigation: FC = () => {
               asChild
               className={cn(
                 navigationMenuTriggerStyle(),
-                "hover:text-secondaryColor hover:bg-transparent focus:bg-transparent"
+                "hover:bg-transparent focus:bg-transparent"
               )}
             >
               <Link href="/projects">More Projects</Link>
@@ -83,7 +83,7 @@ const HeaderNavigation: FC = () => {
               asChild
               className={cn(
                 navigationMenuTriggerStyle(),
-                "hover:text-secondaryColor hover:bg-transparent focus:bg-transparent"
+                "hover:bg-transparent focus:bg-transparent"
               )}
             >
               <Link href="/experience">Work Experience</Link>
@@ -116,9 +116,7 @@ const HeaderNavigation: FC = () => {
               <SheetTrigger asChild>
                 <div className="flex items-center justify-center gap-2 p-4">
                   <Home />
-                  <Link className="focus:text-secondaryColor" href="/">
-                    Home
-                  </Link>
+                  <Link href="/">Home</Link>
                 </div>
               </SheetTrigger>
             </li>
@@ -126,9 +124,7 @@ const HeaderNavigation: FC = () => {
               <SheetTrigger asChild>
                 <div className="flex items-center justify-center gap-2 p-4">
                   <SquareTerminal />
-                  <Link className="focus:text-secondaryColor" href="/skills">
-                    Skills
-                  </Link>
+                  <Link href="/skills">Skills</Link>
                 </div>
               </SheetTrigger>
             </li>
@@ -136,9 +132,7 @@ const HeaderNavigation: FC = () => {
               <SheetTrigger asChild>
                 <div className="flex items-center justify-center gap-2 p-4">
                   <CodeXml />
-                  <Link className="focus:text-secondaryColor" href="/projects">
-                    More Projects
-                  </Link>
+                  <Link href="/projects">More Projects</Link>
                 </div>
               </SheetTrigger>
             </li>
@@ -146,12 +140,7 @@ const HeaderNavigation: FC = () => {
               <SheetTrigger asChild>
                 <div className="flex items-center justify-center gap-2 p-4">
                   <Monitor />
-                  <Link
-                    className="focus:text-secondaryColor"
-                    href="/experience"
-                  >
-                    Work Experience
-                  </Link>
+                  <Link href="/experience">Work Experience</Link>
                 </div>
               </SheetTrigger>
             </li>
@@ -159,9 +148,7 @@ const HeaderNavigation: FC = () => {
               <SheetTrigger asChild>
                 <div className="flex items-center justify-center gap-2 p-4">
                   <UserRound />
-                  <Link className="focus:text-secondaryColor" href="/contact">
-                    Contact
-                  </Link>
+                  <Link href="/contact">Contact</Link>
                 </div>
               </SheetTrigger>
             </li>
