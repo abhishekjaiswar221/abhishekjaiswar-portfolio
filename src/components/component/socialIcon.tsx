@@ -1,8 +1,8 @@
 import React, { FC } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { socialIcons } from "@/data/data";
-import { SocialIconsType } from "@/data/data";
+import { socialIcons } from "@/data/socialIcons";
+import { SocialIconsType } from "@/data/dataTypes";
 
 const socialIcon: FC = () => {
   return (
