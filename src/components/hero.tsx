@@ -30,17 +30,10 @@ const Hero: FC = () => {
           <SocialIcon />
 
           <div className="flex items-center justify-center gap-5">
-            <Button
-              asChild
-              className="border-primaryColor hover:text-secondaryColor w-fit border-2 hover:bg-background"
-            >
+            <Button asChild className="w-fit border-2">
               <Link href="/contact">Connect</Link>
             </Button>
-            <Button
-              asChild
-              variant={"outline"}
-              className="border-primaryColor text-secondaryColor hover:bg-primaryColor w-fit border-2 hover:text-white"
-            >
+            <Button asChild variant={"outline"} className="w-fit border-2">
               <Link href="/resume">Resume</Link>
             </Button>
           </div>
