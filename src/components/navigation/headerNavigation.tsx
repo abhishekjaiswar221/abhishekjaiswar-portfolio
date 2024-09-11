@@ -35,7 +35,7 @@ const headerNavigation: FC = () => {
   return (
     <div className="lg:sticky lg:top-8 lg:z-10">
       <div className="lg:flex lg:justify-center">
-        <div className="flex w-full flex-row items-center justify-between gap-4 bg-zinc-800 px-6 py-4 text-white antialiased md:px-10 lg:w-fit lg:rounded-2xl lg:border lg:border-zinc-700/60 lg:px-4 lg:py-[10px]">
+        <div className="flex w-full flex-row items-center justify-between gap-4 bg-zinc-800 px-6 py-5 text-zinc-100 antialiased md:px-10 lg:w-fit lg:rounded-2xl lg:border lg:border-zinc-700/60 lg:px-4 lg:py-[10px]">
           <div className="flex items-center justify-center gap-2">
             <div className="h-7 w-7">
               <ProfilePhoto />
@@ -53,7 +53,7 @@ const headerNavigation: FC = () => {
                     asChild
                     className={cn(
                       navigationMenuTriggerStyle(),
-                      "rounded-xl bg-zinc-800 p-2 hover:bg-[#3f3f46] hover:text-white focus:bg-transparent focus:text-white"
+                      "rounded-xl bg-zinc-800 p-2 hover:bg-zinc-700 hover:text-zinc-100 focus:bg-transparent focus:text-zinc-100"
                     )}
                   >
                     <Link href="/">Home</Link>
@@ -64,7 +64,7 @@ const headerNavigation: FC = () => {
                     asChild
                     className={cn(
                       navigationMenuTriggerStyle(),
-                      "rounded-xl bg-zinc-800 p-2 hover:bg-[#3f3f46] hover:text-white focus:bg-transparent focus:text-white"
+                      "rounded-xl bg-zinc-800 p-2 hover:bg-zinc-700 hover:text-zinc-100 focus:bg-transparent focus:text-zinc-100"
                     )}
                   >
                     <Link href="#skills">Skills</Link>
@@ -75,7 +75,7 @@ const headerNavigation: FC = () => {
                     asChild
                     className={cn(
                       navigationMenuTriggerStyle(),
-                      "rounded-xl bg-zinc-800 p-2 hover:bg-[#3f3f46] hover:text-white focus:bg-transparent focus:text-white"
+                      "rounded-xl bg-zinc-800 p-2 hover:bg-zinc-700 hover:text-zinc-100 focus:bg-transparent focus:text-zinc-100"
                     )}
                   >
                     <Link href="/projects">More Projects</Link>
@@ -86,7 +86,7 @@ const headerNavigation: FC = () => {
                     asChild
                     className={cn(
                       navigationMenuTriggerStyle(),
-                      "rounded-xl bg-zinc-800 p-2 hover:bg-[#3f3f46] hover:text-white focus:bg-transparent focus:text-white"
+                      "rounded-xl bg-zinc-800 p-2 hover:bg-zinc-700 hover:text-zinc-100 focus:bg-transparent focus:text-zinc-100"
                     )}
                   >
                     <Link href="/experience">Work Experience</Link>
