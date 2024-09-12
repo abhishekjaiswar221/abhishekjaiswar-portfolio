@@ -1,18 +1,16 @@
-import React, { FC } from "react";
-import Image from "next/image";
+import { FC } from "react";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
-const ProfilePhoto: FC = () => {
+interface ProfilePhotoProps {
+  styles?: string;
+}
+
+const ProfilePhoto: FC<ProfilePhotoProps> = ({ styles }) => {
   return (
-    // <div className="rounded-full border-[5px] border-[#f2f2f3] p-1">
-    <Image
-      className="rounded-full border"
-      src={"/images/profile-picture.png"}
-      width={150}
-      height={150}
-      alt="Photo"
-      priority={true}
-    />
-    // </div>
+    <Avatar className={`${styles}`}>
+      <AvatarImage src="/images/profile-picture.png" alt="Profile Photo" />
+      <AvatarFallback>AJ</AvatarFallback>
+    </Avatar>
   );
 };
 
