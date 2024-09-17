@@ -1,39 +1,20 @@
 import React, { FC } from "react";
 import Link from "next/link";
-import Image from "next/image";
-import { socialIcons } from "@/data/socialIcons";
 import { Copyright } from "lucide-react";
+import SocialIcon from "../component/socialIcon";
 
 const FooterNavigation: FC = () => {
   return (
     <footer
       id="footer"
-      className="flex w-full flex-col gap-1 bg-zinc-800 py-5 text-zinc-100"
+      className="flex w-full flex-col gap-1 border-t border-zinc-800 py-5"
     >
       <div className="flex flex-col items-center justify-center gap-2">
         <div>
           <p className="text-center">Stay Connected</p>
         </div>
-        <div className="flex flex-row items-center justify-center gap-5">
-          {socialIcons.map(({ id, imgSrc, altText, bgColor, href }) => {
-            return (
-              <div key={id} className="rounded-full border p-[2px] shadow-md">
-                <Link
-                  key={id}
-                  href={href || "/"}
-                  target="_blank"
-                  className={`flex h-7 w-7 items-center justify-center rounded-full ${bgColor} hover:scale-95`}
-                >
-                  <Image
-                    src={`/socials/${imgSrc}`}
-                    alt={altText}
-                    width={18}
-                    height={18}
-                  />
-                </Link>
-              </div>
-            );
-          })}
+        <div>
+          <SocialIcon />
         </div>
       </div>
       <div className="pb-1 pt-2">

@@ -10,16 +10,6 @@ export interface TechCardProps {
   cardTitle: string;
 }
 
-export interface SocialIconsType {
-  id: number;
-  title: string;
-  imgSrc: string;
-  altText: string;
-  bgColor: string;
-  borderColor: string;
-  href: string;
-}
-
 export interface ProjectsType {
   id: number;
   title: string;
