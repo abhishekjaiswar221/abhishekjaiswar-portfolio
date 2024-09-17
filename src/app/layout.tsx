@@ -5,6 +5,7 @@ import "@/styles/globals.css";
 import { cn } from "@/lib/utils";
 import HeaderNavigation from "@/components/navigation/headerNavigation";
 import FooterNavigation from "@/components/navigation/footerNavigation";
+import Background from "@/components/component/background";
 
 const noto_sans = Noto_Sans({ subsets: ["latin"] });
 
@@ -23,9 +24,14 @@ export default function RootLayout({ children }: Readonly<RootLayoutProps>) {
   return (
     <html lang="en" suppressHydrationWarning>
       <head />
-      <body className={cn("min-h-screen antialiased", noto_sans.className)}>
+      <body
+        className={cn(
+          "min-h-screen bg-[#14131a] text-zinc-100 antialiased",
+          noto_sans.className
+        )}
+      >
         <HeaderNavigation />
-        {children}
+        <Background>{children}</Background>
         <FooterNavigation />
       </body>
     </html>

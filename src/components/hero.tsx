@@ -2,44 +2,50 @@ import React, { FC } from "react";
 import Link from "next/link";
 import { Button } from "./ui/button";
 import SocialIcon from "./component/socialIcon";
-import Background from "./component/background";
 import ProfilePhoto from "./component/profilePhoto";
 
 const Hero: FC = () => {
   return (
-    <>
-      <Background>
-        <section className="flex h-screen flex-col items-center justify-center gap-5 md:h-[37rem] xl:h-[42rem]">
-          <div className="flex flex-col items-center justify-center gap-8">
-            <ProfilePhoto />
-            <div className="space-y-4 text-center">
-              <p className="scroll-m-20 text-2xl font-medium tracking-tight text-[#3c3c43] md:text-3xl lg:text-4xl">
-                Hola Amigos !👋🏼 <br />
-                <span>I&apos;m Abhishek Jaiswar</span>
-              </p>
-              <p className="scroll-m-20 tracking-tight text-[#65656a] md:text-lg xl:text-xl">
-                I transform ideas into stunning realities
-              </p>
-              <span className="scroll-m-20 tracking-tight text-[#65656a] md:text-lg xl:text-xl">
-                A <span className="text-[#3c3c43]">Frontend Web Developer</span>
-                , with expertise in frontend frameworks like React Js
-              </span>
-            </div>
-          </div>
-
+    <section className="flex h-fit w-full items-start justify-center">
+      <div className="basis-2/3 space-y-6">
+        <div>
+          <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
+            A <span className="text-green-600">Frontend Web Developer</span>,
+          </h1>
+          <h1 className="scroll-m-20 text-2xl font-extrabold tracking-tight lg:text-3xl">
+            I transform ideas into stunning realities
+          </h1>
+        </div>
+        <div>
+          <p className="text-balance text-zinc-400">
+            A React JS developer is a software engineer specializing in building
+            interactive and responsive user interfaces for web applications
+            using the open-source JavaScript library, React, which allows them
+            to create reusable components to efficiently design complex
+            front-end structures, often incorporating features like routing,
+            state management, and data fetching to deliver seamless user
+            experiences across different devices.
+          </p>
+        </div>
+        <div>
+          <Button
+            asChild
+            variant={"ghost"}
+            className="w-fit border-2 border-green-600 hover:bg-green-600 hover:text-zinc-100"
+          >
+            <Link href="/connect">Connect</Link>
+          </Button>
+        </div>
+      </div>
+      <div className="basis-1/3 space-y-4">
+        <div>
+          <ProfilePhoto styles={"w-full h-full rounded-lg aspect-square"} />
+        </div>
+        <div>
           <SocialIcon />
-
-          <div className="flex items-center justify-center gap-5">
-            <Button asChild className="w-fit border-2">
-              <Link href="/contact">Connect</Link>
-            </Button>
-            <Button asChild variant={"outline"} className="w-fit border-2">
-              <Link href="/resume">Resume</Link>
-            </Button>
-          </div>
-        </section>
-      </Background>
-    </>
+        </div>
+      </div>
+    </section>
   );
 };
 

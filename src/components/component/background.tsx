@@ -8,7 +8,7 @@ interface BackgroundProps {
 
 const Background: FC<BackgroundProps> = ({ children }) => {
   return (
-    <div className="relative flex h-screen w-full items-center justify-center overflow-hidden rounded-lg bg-background px-6 md:px-10 lg:px-20 xl:px-32">
+    <div className="flex h-[43rem] w-full items-center justify-center overflow-hidden">
       {children}
       <GridPattern
         width={30}
@@ -16,7 +16,7 @@ const Background: FC<BackgroundProps> = ({ children }) => {
         x={-1}
         y={-1}
         className={cn(
-          "[mask-image:linear-gradient(to_bottom_right,white,transparent,transparent)]"
+          "[mask-image:linear-gradient(to_bottom,white,transparent,transparent)]"
         )}
       />
     </div>
