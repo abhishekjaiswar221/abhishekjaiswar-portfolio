@@ -5,7 +5,6 @@ import "@/styles/globals.css";
 import { cn } from "@/lib/utils";
 import HeaderNavigation from "@/components/navigation/headerNavigation";
 import FooterNavigation from "@/components/navigation/footerNavigation";
-import Background from "@/components/component/background";
 
 const noto_sans = Noto_Sans({ subsets: ["latin"] });
 
@@ -31,7 +30,7 @@ export default function RootLayout({ children }: Readonly<RootLayoutProps>) {
         )}
       >
         <HeaderNavigation />
-        <Background>{children}</Background>
+        {children}
         <FooterNavigation />
       </body>
     </html>
