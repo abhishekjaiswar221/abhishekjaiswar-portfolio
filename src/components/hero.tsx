@@ -6,7 +6,7 @@ import ProfilePhoto from "./component/profilePhoto";
 
 const Hero: FC = () => {
   return (
-    <section className="flex h-fit w-full flex-col gap-10 md:flex-row md:items-start md:justify-center md:gap-4">
+    <section className="flex h-fit w-full flex-col gap-10 md:flex-row md:items-start md:justify-center md:gap-2 lg:gap-4">
       <div className="basis-2/3 space-y-6">
         <div>
           <h1 className="scroll-m-20 text-3xl font-extrabold tracking-tight lg:text-4xl xl:text-5xl">
