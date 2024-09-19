@@ -23,7 +23,12 @@ export default function RootLayout({ children }: Readonly<RootLayoutProps>) {
   return (
     <html lang="en" suppressHydrationWarning>
       <head />
-      <body className={cn("min-h-screen antialiased", noto_sans.className)}>
+      <body
+        className={cn(
+          "min-h-screen bg-[#14131a] text-zinc-100 antialiased",
+          noto_sans.className
+        )}
+      >
         <HeaderNavigation />
         {children}
         <FooterNavigation />
