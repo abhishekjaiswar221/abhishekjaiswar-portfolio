@@ -2,6 +2,7 @@ import React, { FC } from "react";
 import Hero from "@/components/hero";
 import { cn } from "@/lib/utils";
 import { Andika } from "next/font/google";
+import Projects from "@/components/projects";
 
 const andika = Andika({ subsets: ["latin"], weight: "400" });
 
@@ -15,6 +16,9 @@ const Home: FC = () => {
     >
       <section id="hero">
         <Hero />
+      </section>
+      <section id="projects">
+        <Projects />
       </section>
     </main>
   );

@@ -25,7 +25,7 @@ export default function RootLayout({ children }: Readonly<RootLayoutProps>) {
       <head />
       <body
         className={cn(
-          "min-h-screen bg-[#14131a] text-zinc-100 antialiased",
+          "min-h-screen bg-[#14131a] text-zinc-200 antialiased",
           noto_sans.className
         )}
       >
