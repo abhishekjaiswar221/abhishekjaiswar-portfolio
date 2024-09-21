@@ -4,24 +4,6 @@
 
 @layer base {
   :root {
-    /* Social Icon Colors */
-    --github: #6225c5;
-    --linkedin: #0a66c2;
-    --twitter: #1c9cea;
-
-    /* Custom Colors */
-    --primary-color: #16a34a;
-    --secondary-color: #0f6f32;
-    --primary-text-color: #3c3c43;
-    --secondary-text-color: #65656a;
-    --tertiary-text-color: #f4f4f5;
-    --background-color: #fafbfc;
-    --profile-border-color: #f2f2f3;
-    --primary-border-color: #e4e4e7;
-    --tech-stack-border-color: #e5e7eb;
-    --footer-color: #242424;
-
-    /* Default Colors */
     --background: 0 0% 100%;
     --foreground: 240 10% 3.9%;
     --card: 0 0% 100%;

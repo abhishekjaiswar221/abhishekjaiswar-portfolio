@@ -43,7 +43,7 @@ const MobileNavigation: FC = () => {
         <ul className="flex h-screen flex-col items-start justify-start pt-6">
           <li>
             <SheetTrigger asChild>
-              <div className="flex items-center justify-center gap-2 p-4">
+              <div className="flex items-center justify-center gap-2 p-4 hover:text-zinc-200">
                 <Home />
                 <Link href="/">Home</Link>
               </div>
@@ -51,7 +51,7 @@ const MobileNavigation: FC = () => {
           </li>
           <li>
             <SheetTrigger asChild>
-              <div className="flex items-center justify-center gap-2 p-4">
+              <div className="flex items-center justify-center gap-2 p-4 hover:text-zinc-200">
                 <SquareTerminal />
                 <Link href="/skills">Skills</Link>
               </div>
@@ -59,7 +59,7 @@ const MobileNavigation: FC = () => {
           </li>
           <li>
             <SheetTrigger asChild>
-              <div className="flex items-center justify-center gap-2 p-4">
+              <div className="flex items-center justify-center gap-2 p-4 hover:text-zinc-200">
                 <CodeXml />
                 <Link href="/projects">More Projects</Link>
               </div>
@@ -67,7 +67,7 @@ const MobileNavigation: FC = () => {
           </li>
           <li>
             <SheetTrigger asChild>
-              <div className="flex items-center justify-center gap-2 p-4">
+              <div className="flex items-center justify-center gap-2 p-4 hover:text-zinc-200">
                 <Monitor />
                 <Link href="/experience">Work Experience</Link>
               </div>
@@ -75,7 +75,7 @@ const MobileNavigation: FC = () => {
           </li>
           <li>
             <SheetTrigger asChild>
-              <div className="flex items-center justify-center gap-2 p-4">
+              <div className="flex items-center justify-center gap-2 p-4 hover:text-zinc-200">
                 <UserRound />
                 <Link href="/contact">Contact</Link>
               </div>
@@ -86,7 +86,7 @@ const MobileNavigation: FC = () => {
           </div>
           <li>
             <SheetTrigger asChild>
-              <div className="flex items-center justify-center gap-2 p-4">
+              <div className="flex items-center justify-center gap-2 p-4 hover:text-zinc-200">
                 <Github className="text-github" />
                 <Link href="https://github.com/abhishekjaiswar221">Github</Link>
               </div>
@@ -94,7 +94,7 @@ const MobileNavigation: FC = () => {
           </li>
           <li>
             <SheetTrigger asChild>
-              <div className="flex items-center justify-center gap-2 p-4">
+              <div className="flex items-center justify-center gap-2 p-4 hover:text-zinc-200">
                 <Linkedin className="text-linkedin" />
                 <Link href="https://linkedin.com/in/abhishekjai221">
                   LinkedIn
@@ -104,7 +104,7 @@ const MobileNavigation: FC = () => {
           </li>
           <li>
             <SheetTrigger asChild>
-              <div className="flex items-center justify-center gap-2 p-4">
+              <div className="flex items-center justify-center gap-2 p-4 hover:text-zinc-200">
                 <Twitter className="text-twitter" />
                 <Link href="https://x.com/abhishekjai221">Twitter</Link>
               </div>
