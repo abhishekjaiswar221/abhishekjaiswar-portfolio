@@ -25,7 +25,7 @@ const MobileNavigation: FC = () => {
     <Sheet>
       <SheetTrigger asChild className="flex w-full items-center justify-end">
         <div className="lg:hidden">
-          <Menu />
+          <Menu size={22} strokeWidth={1.5} />
         </div>
       </SheetTrigger>
 
@@ -44,7 +44,7 @@ const MobileNavigation: FC = () => {
           <li>
             <SheetTrigger asChild>
               <div className="flex items-center justify-center gap-2 p-4 hover:text-zinc-200">
-                <Home />
+                <Home size={22} strokeWidth={1.5} />
                 <Link href="/">Home</Link>
               </div>
             </SheetTrigger>
@@ -52,7 +52,7 @@ const MobileNavigation: FC = () => {
           <li>
             <SheetTrigger asChild>
               <div className="flex items-center justify-center gap-2 p-4 hover:text-zinc-200">
-                <SquareTerminal />
+                <SquareTerminal size={22} strokeWidth={1.5} />
                 <Link href="/skills">Skills</Link>
               </div>
             </SheetTrigger>
@@ -60,7 +60,7 @@ const MobileNavigation: FC = () => {
           <li>
             <SheetTrigger asChild>
               <div className="flex items-center justify-center gap-2 p-4 hover:text-zinc-200">
-                <CodeXml />
+                <CodeXml size={22} strokeWidth={1.5} />
                 <Link href="/projects">More Projects</Link>
               </div>
             </SheetTrigger>
@@ -68,7 +68,7 @@ const MobileNavigation: FC = () => {
           <li>
             <SheetTrigger asChild>
               <div className="flex items-center justify-center gap-2 p-4 hover:text-zinc-200">
-                <Monitor />
+                <Monitor size={22} strokeWidth={1.5} />
                 <Link href="/experience">Work Experience</Link>
               </div>
             </SheetTrigger>
@@ -76,7 +76,7 @@ const MobileNavigation: FC = () => {
           <li>
             <SheetTrigger asChild>
               <div className="flex items-center justify-center gap-2 p-4 hover:text-zinc-200">
-                <UserRound />
+                <UserRound size={22} strokeWidth={1.5} />
                 <Link href="/contact">Contact</Link>
               </div>
             </SheetTrigger>
@@ -87,7 +87,7 @@ const MobileNavigation: FC = () => {
           <li>
             <SheetTrigger asChild>
               <div className="flex items-center justify-center gap-2 p-4 hover:text-zinc-200">
-                <Github className="text-github" />
+                <Github size={22} strokeWidth={1.5} />
                 <Link href="https://github.com/abhishekjaiswar221">Github</Link>
               </div>
             </SheetTrigger>
@@ -95,7 +95,7 @@ const MobileNavigation: FC = () => {
           <li>
             <SheetTrigger asChild>
               <div className="flex items-center justify-center gap-2 p-4 hover:text-zinc-200">
-                <Linkedin className="text-linkedin" />
+                <Linkedin size={22} strokeWidth={1.5} />
                 <Link href="https://linkedin.com/in/abhishekjai221">
                   LinkedIn
                 </Link>
@@ -105,7 +105,7 @@ const MobileNavigation: FC = () => {
           <li>
             <SheetTrigger asChild>
               <div className="flex items-center justify-center gap-2 p-4 hover:text-zinc-200">
-                <Twitter className="text-twitter" />
+                <Twitter size={22} strokeWidth={1.5} />
                 <Link href="https://x.com/abhishekjai221">Twitter</Link>
               </div>
             </SheetTrigger>
