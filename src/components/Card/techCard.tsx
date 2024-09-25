@@ -21,16 +21,16 @@ const TechCard: FC<TechCardProps> = ({ iterableArray, cardTitle }) => {
           {cardTitle}
         </CardTitle>
       </CardHeader>
-      <CardContent className="grid grid-cols-2 gap-4 p-5 pt-1 md:grid-cols-3 lg:grid-cols-4 lg:gap-3">
+      <CardContent className="grid grid-cols-3 gap-3 p-5 pt-1 lg:grid-cols-4">
         {iterableArray.map(({ id, title, imgSrc, altText }: TechIconsType) => {
           return (
             <div key={id}>
-              <Button className="flex h-10 w-28 flex-row items-center justify-center gap-2 border border-zinc-700/60 bg-[#14131a] shadow-none hover:bg-zinc-700 md:h-full md:w-full md:flex-col">
+              <Button className="flex h-full w-full flex-col items-center justify-center gap-2 border border-zinc-700/60 bg-zinc-900 shadow-lg hover:bg-zinc-800">
                 <Image
                   src={`/techIcons/${imgSrc}`}
                   alt={altText}
-                  width={20}
-                  height={20}
+                  width={22}
+                  height={22}
                 />
                 <span
                   className={cn(noto_sans.className, "text-xs text-zinc-400")}

@@ -19,6 +19,12 @@ const config = {
     },
     extend: {
       colors: {
+        // Socials Icon Colors
+        github: "var(--github)",
+        linkedin: "var(--linkedin)",
+        twitter: "var(--twitter)",
+
+        // Default Colors
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
