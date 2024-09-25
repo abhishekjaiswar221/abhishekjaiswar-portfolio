@@ -14,7 +14,7 @@ const Page: FC = () => {
       id="experience"
       className={cn(
         andika.className,
-        "mx-auto flex w-full max-w-3xl flex-col px-4 pb-20 pt-2"
+        "mx-auto flex w-full max-w-3xl flex-col px-4 pb-10 pt-2 md:pb-20"
       )}
     >
       <div>
