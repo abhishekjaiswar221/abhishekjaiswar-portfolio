@@ -43,41 +43,51 @@ const MobileNavigation: FC = () => {
         <ul className="flex h-screen flex-col items-start justify-start pt-6">
           <li>
             <SheetTrigger asChild>
-              <div className="flex items-center justify-center gap-2 p-4 hover:text-zinc-200">
+              <div className="flex items-center justify-center gap-2 p-4">
                 <Home size={22} strokeWidth={1.5} />
-                <Link href="/">Home</Link>
+                <Link className="text-sm" href="/">
+                  Home
+                </Link>
               </div>
             </SheetTrigger>
           </li>
           <li>
             <SheetTrigger asChild>
-              <div className="flex items-center justify-center gap-2 p-4 hover:text-zinc-200">
+              <div className="flex items-center justify-center gap-2 p-4">
                 <SquareTerminal size={22} strokeWidth={1.5} />
-                <Link href="/skills">Skills</Link>
+                <Link className="text-sm" href="/skills">
+                  Skills
+                </Link>
               </div>
             </SheetTrigger>
           </li>
           <li>
             <SheetTrigger asChild>
-              <div className="flex items-center justify-center gap-2 p-4 hover:text-zinc-200">
+              <div className="flex items-center justify-center gap-2 p-4">
                 <CodeXml size={22} strokeWidth={1.5} />
-                <Link href="/projects">More Projects</Link>
+                <Link className="text-sm" href="/projects">
+                  More Projects
+                </Link>
               </div>
             </SheetTrigger>
           </li>
           <li>
             <SheetTrigger asChild>
-              <div className="flex items-center justify-center gap-2 p-4 hover:text-zinc-200">
+              <div className="flex items-center justify-center gap-2 p-4">
                 <Monitor size={22} strokeWidth={1.5} />
-                <Link href="/experience">Work Experience</Link>
+                <Link className="text-sm" href="/experience">
+                  Work Experience
+                </Link>
               </div>
             </SheetTrigger>
           </li>
           <li>
             <SheetTrigger asChild>
-              <div className="flex items-center justify-center gap-2 p-4 hover:text-zinc-200">
+              <div className="flex items-center justify-center gap-2 p-4">
                 <UserRound size={22} strokeWidth={1.5} />
-                <Link href="/contact">Contact</Link>
+                <Link className="text-sm" href="/contact">
+                  Contact
+                </Link>
               </div>
             </SheetTrigger>
           </li>
@@ -86,17 +96,29 @@ const MobileNavigation: FC = () => {
           </div>
           <li>
             <SheetTrigger asChild>
-              <div className="flex items-center justify-center gap-2 p-4 hover:text-zinc-200">
-                <Github size={22} strokeWidth={1.5} />
-                <Link href="https://github.com/abhishekjaiswar221">Github</Link>
+              <div className="flex items-center justify-center gap-2 p-4">
+                <Github className="text-github" size={22} strokeWidth={1.5} />
+                <Link
+                  className="text-sm"
+                  href="https://github.com/abhishekjaiswar221"
+                >
+                  Github
+                </Link>
               </div>
             </SheetTrigger>
           </li>
           <li>
             <SheetTrigger asChild>
-              <div className="flex items-center justify-center gap-2 p-4 hover:text-zinc-200">
-                <Linkedin size={22} strokeWidth={1.5} />
-                <Link href="https://linkedin.com/in/abhishekjai221">
+              <div className="flex items-center justify-center gap-2 p-4">
+                <Linkedin
+                  className="text-linkedin"
+                  size={22}
+                  strokeWidth={1.5}
+                />
+                <Link
+                  className="text-sm"
+                  href="https://linkedin.com/in/abhishekjai221"
+                >
                   LinkedIn
                 </Link>
               </div>
@@ -104,9 +126,11 @@ const MobileNavigation: FC = () => {
           </li>
           <li>
             <SheetTrigger asChild>
-              <div className="flex items-center justify-center gap-2 p-4 hover:text-zinc-200">
-                <Twitter size={22} strokeWidth={1.5} />
-                <Link href="https://x.com/abhishekjai221">Twitter</Link>
+              <div className="flex items-center justify-center gap-2 p-4">
+                <Twitter className="text-twitter" size={22} strokeWidth={1.5} />
+                <Link className="text-sm" href="https://x.com/abhishekjai221">
+                  Twitter
+                </Link>
               </div>
             </SheetTrigger>
           </li>

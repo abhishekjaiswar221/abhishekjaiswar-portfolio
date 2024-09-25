@@ -39,7 +39,7 @@ const Hero: FC = () => {
           <ProfilePhoto styles={"w-full h-full rounded-xl aspect-square"} />
         </div>
         <div>
-          <SocialIcon />
+          <SocialIcon styles={"text-zinc-400"} />
         </div>
       </div>
     </section>

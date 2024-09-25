@@ -25,7 +25,7 @@ const TechCard: FC<TechCardProps> = ({ iterableArray, cardTitle }) => {
         {iterableArray.map(({ id, title, imgSrc, altText }: TechIconsType) => {
           return (
             <div key={id}>
-              <Button className="flex h-10 w-28 flex-row items-center justify-center gap-2 border border-zinc-700/60 bg-[#14131a] shadow-none hover:bg-zinc-700 md:h-full md:w-full md:flex-col">
+              <Button className="flex h-10 w-28 flex-row items-center justify-center gap-2 border border-zinc-700/60 bg-zinc-900 shadow-lg hover:bg-zinc-800 md:h-full md:w-full md:flex-col">
                 <Image
                   src={`/techIcons/${imgSrc}`}
                   alt={altText}
