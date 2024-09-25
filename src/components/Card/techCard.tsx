@@ -29,8 +29,8 @@ const TechCard: FC<TechCardProps> = ({ iterableArray, cardTitle }) => {
                 <Image
                   src={`/techIcons/${imgSrc}`}
                   alt={altText}
-                  width={20}
-                  height={20}
+                  width={22}
+                  height={22}
                 />
                 <span
                   className={cn(noto_sans.className, "text-xs text-zinc-400")}
