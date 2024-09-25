@@ -24,7 +24,9 @@ const FooterNavigation: FC = () => {
           }
           target="_blank"
         >
-          <p className="text-center text-xs">Source Code</p>
+          <p className="text-center text-xs hover:text-indigo-500">
+            Source Code
+          </p>
         </Link>
       </div>
       <div className="flex items-center justify-center gap-1">

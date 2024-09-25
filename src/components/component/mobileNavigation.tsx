@@ -25,7 +25,7 @@ const MobileNavigation: FC = () => {
     <Sheet>
       <SheetTrigger asChild className="flex w-full items-center justify-end">
         <div className="lg:hidden">
-          <Menu />
+          <Menu size={22} strokeWidth={1.5} />
         </div>
       </SheetTrigger>
 
@@ -43,40 +43,40 @@ const MobileNavigation: FC = () => {
         <ul className="flex h-screen flex-col items-start justify-start pt-6">
           <li>
             <SheetTrigger asChild>
-              <div className="flex items-center justify-center gap-2 p-4">
-                <Home />
+              <div className="flex items-center justify-center gap-2 p-4 hover:text-zinc-200">
+                <Home size={22} strokeWidth={1.5} />
                 <Link href="/">Home</Link>
               </div>
             </SheetTrigger>
           </li>
           <li>
             <SheetTrigger asChild>
-              <div className="flex items-center justify-center gap-2 p-4">
-                <SquareTerminal />
+              <div className="flex items-center justify-center gap-2 p-4 hover:text-zinc-200">
+                <SquareTerminal size={22} strokeWidth={1.5} />
                 <Link href="/skills">Skills</Link>
               </div>
             </SheetTrigger>
           </li>
           <li>
             <SheetTrigger asChild>
-              <div className="flex items-center justify-center gap-2 p-4">
-                <CodeXml />
+              <div className="flex items-center justify-center gap-2 p-4 hover:text-zinc-200">
+                <CodeXml size={22} strokeWidth={1.5} />
                 <Link href="/projects">More Projects</Link>
               </div>
             </SheetTrigger>
           </li>
           <li>
             <SheetTrigger asChild>
-              <div className="flex items-center justify-center gap-2 p-4">
-                <Monitor />
+              <div className="flex items-center justify-center gap-2 p-4 hover:text-zinc-200">
+                <Monitor size={22} strokeWidth={1.5} />
                 <Link href="/experience">Work Experience</Link>
               </div>
             </SheetTrigger>
           </li>
           <li>
             <SheetTrigger asChild>
-              <div className="flex items-center justify-center gap-2 p-4">
-                <UserRound />
+              <div className="flex items-center justify-center gap-2 p-4 hover:text-zinc-200">
+                <UserRound size={22} strokeWidth={1.5} />
                 <Link href="/contact">Contact</Link>
               </div>
             </SheetTrigger>
@@ -86,16 +86,16 @@ const MobileNavigation: FC = () => {
           </div>
           <li>
             <SheetTrigger asChild>
-              <div className="flex items-center justify-center gap-2 p-4">
-                <Github className="text-github" />
+              <div className="flex items-center justify-center gap-2 p-4 hover:text-zinc-200">
+                <Github size={22} strokeWidth={1.5} />
                 <Link href="https://github.com/abhishekjaiswar221">Github</Link>
               </div>
             </SheetTrigger>
           </li>
           <li>
             <SheetTrigger asChild>
-              <div className="flex items-center justify-center gap-2 p-4">
-                <Linkedin className="text-linkedin" />
+              <div className="flex items-center justify-center gap-2 p-4 hover:text-zinc-200">
+                <Linkedin size={22} strokeWidth={1.5} />
                 <Link href="https://linkedin.com/in/abhishekjai221">
                   LinkedIn
                 </Link>
@@ -104,8 +104,8 @@ const MobileNavigation: FC = () => {
           </li>
           <li>
             <SheetTrigger asChild>
-              <div className="flex items-center justify-center gap-2 p-4">
-                <Twitter className="text-twitter" />
+              <div className="flex items-center justify-center gap-2 p-4 hover:text-zinc-200">
+                <Twitter size={22} strokeWidth={1.5} />
                 <Link href="https://x.com/abhishekjai221">Twitter</Link>
               </div>
             </SheetTrigger>

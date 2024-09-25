@@ -11,10 +11,10 @@ const Hero: FC = () => {
         <div className="space-y-3">
           <h1 className="scroll-m-20 text-balance text-3xl font-extrabold tracking-tight lg:text-4xl xl:text-5xl">
             Hola 👋🏼, I&apos;m{" "}
-            <span className="text-green-600">Abhishek Jaiswar</span>
+            <span className="text-indigo-500">Abhishek Jaiswar</span>
           </h1>
-          <h1 className="scroll-m-20 text-xl font-extrabold tracking-tight text-zinc-300 md:text-2xl lg:text-3xl xl:text-4xl">
-            <span className="text-green-600">Frontend</span> Web Developer
+          <h1 className="scroll-m-20 text-xl font-extrabold tracking-tight text-zinc-400 md:text-2xl lg:text-3xl xl:text-4xl">
+            <span className="text-indigo-500">Frontend</span> Web Developer
           </h1>
         </div>
         <div>
@@ -28,7 +28,7 @@ const Hero: FC = () => {
         <div className="hidden lg:block">
           <Button
             asChild
-            className="rounded-lg border-2 border-green-600 bg-green-600 hover:bg-transparent"
+            className="rounded-lg border-2 border-indigo-500 bg-indigo-500 text-zinc-200 hover:bg-transparent"
           >
             <Link href="/connect">Connect</Link>
           </Button>
