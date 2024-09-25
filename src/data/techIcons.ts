@@ -52,17 +52,29 @@ export const frontendTechIcons: Array<TechIconsType> = [
   {
     id: 9,
     title: "Javascript",
-    imgSrc: "js.svg",
+    imgSrc: "javascript.svg",
     altText: "Javascript Logo",
   },
   {
     id: 10,
+    title: "Typescript",
+    imgSrc: "typescript.svg",
+    altText: "Typescript Logo",
+  },
+  {
+    id: 11,
     title: "React JS",
     imgSrc: "reactjs.svg",
     altText: "React JS Logo",
   },
   {
-    id: 11,
+    id: 12,
+    title: "Next JS",
+    imgSrc: "nextjs.svg",
+    altText: "Next JS Logo",
+  },
+  {
+    id: 13,
     title: "Redux JS",
     imgSrc: "redux.svg",
     altText: "Redux JS Logo",
