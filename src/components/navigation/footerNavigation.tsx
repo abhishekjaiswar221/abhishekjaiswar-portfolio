@@ -36,7 +36,7 @@ const FooterNavigation: FC = () => {
         </p>
       </div>
       <div>
-        <p className="text-center">Made With ❤ By Abhishek Jaiswar</p>
+        <p className="text-center">Made With ❤️ By Abhishek Jaiswar</p>
       </div>
     </footer>
   );
