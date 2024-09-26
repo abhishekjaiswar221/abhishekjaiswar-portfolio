@@ -15,7 +15,7 @@ interface TechCardProps {
 
 const TechCard: FC<TechCardProps> = ({ iterableArray, cardTitle }) => {
   return (
-    <Card className="rounded-lg border-zinc-700/60 bg-zinc-800 shadow-2xl">
+    <Card className="rounded-lg border-zinc-700/60 bg-zinc-800 shadow-xl">
       <CardHeader className="p-4">
         <CardTitle className="scroll-m-20 text-center text-lg font-semibold tracking-tight text-zinc-400 md:text-xl">
           {cardTitle}

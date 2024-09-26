@@ -19,3 +19,12 @@ export interface ProjectsType {
   github: string;
   live: string;
 }
+
+export interface MoreProjectsType {
+  id: number;
+  title: string;
+  techStacks: Array<String>;
+  description: string;
+  github: string;
+  live: string;
+}
