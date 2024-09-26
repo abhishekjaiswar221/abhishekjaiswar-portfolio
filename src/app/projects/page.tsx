@@ -4,6 +4,8 @@ import { cn } from "@/lib/utils";
 import { Andika } from "next/font/google";
 import { ChevronLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { moreProjects } from "@/data/moreProjects";
+import { MoreProjectsType } from "@/data/dataTypes";
 import MoreProjectsCard from "@/components/Card/moreProjectsCard";
 
 const andika = Andika({ subsets: ["latin"], weight: "400" });
@@ -14,14 +16,14 @@ const Page: FC = () => {
       id="experience"
       className={cn(
         andika.className,
-        "mx-auto flex w-full max-w-3xl flex-col px-4 pb-10 pt-2 md:pb-20"
+        "w-3xl mx-auto flex max-w-3xl flex-col px-6 py-10 md:px-10 md:pb-20 lg:px-5 lg:pt-5"
       )}
     >
       <div>
         <Button
           asChild
           variant="default"
-          className="bg-transparent px-0 shadow-none hover:bg-zinc-900 hover:text-zinc-200"
+          className="bg-transparent px-0 shadow-none hover:bg-zinc-900 hover:text-indigo-400"
         >
           <Link href="/">
             <ChevronLeft size={20} strokeWidth={1.5} />
@@ -33,10 +35,29 @@ const Page: FC = () => {
         </h3>
       </div>
       <div className="mt-8">
-        <ul className="flex flex-col items-center gap-4">
-          {[...Array(3)].map((_, index: number) => (
-            <MoreProjectsCard key={index} index={index} />
-          ))}
+        <ul className="flex flex-col gap-4">
+          {moreProjects.map(
+            ({
+              id,
+              title,
+              techStacks,
+              description,
+              github,
+              live,
+            }: MoreProjectsType) => {
+              return (
+                <MoreProjectsCard
+                  key={id}
+                  id={id}
+                  title={title}
+                  techStacks={techStacks}
+                  description={description}
+                  github={github}
+                  live={live}
+                />
+              );
+            }
+          )}
         </ul>
       </div>
     </main>
