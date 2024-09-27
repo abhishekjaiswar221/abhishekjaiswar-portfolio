@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import Link from "next/link";
 import { Button } from "./ui/button";
-import Social from "./component/social";
+import SocialIcon from "./component/socialIcon";
 import ProfilePhoto from "./component/profilePhoto";
 
 const Hero: FC = () => {
@@ -39,7 +39,7 @@ const Hero: FC = () => {
           <ProfilePhoto styles={"w-full h-full rounded-xl aspect-square"} />
         </div>
         <div>
-          <Social styles={"text-zinc-400"} />
+          <SocialIcon styles={"text-zinc-400"} />
         </div>
       </div>
     </section>

@@ -16,7 +16,7 @@ import { Badge } from "../ui/badge";
 
 const noto_sans = Noto_Sans({ subsets: ["latin"] });
 
-const MoreProjectCard: FC<MoreProjectsType> = ({
+const MoreProjectsCard: FC<MoreProjectsType> = ({
   id,
   title,
   techStacks,
@@ -74,4 +74,4 @@ const MoreProjectCard: FC<MoreProjectsType> = ({
   );
 };
 
-export default MoreProjectCard;
+export default MoreProjectsCard;

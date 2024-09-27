@@ -10,7 +10,7 @@ import {
 import Link from "next/link";
 import { Menu } from "lucide-react";
 import { mobileNavLinks } from "@/data/navLinks";
-import { mobileSocialNavLinks } from "@/data/navLinks";
+import { mobileSocialLinks } from "@/data/navLinks";
 import { VisuallyHidden } from "@radix-ui/react-visually-hidden";
 
 const MobileNavigation: FC = () => {
@@ -52,7 +52,7 @@ const MobileNavigation: FC = () => {
             <h1>Socials</h1>
           </div>
           <div>
-            {mobileSocialNavLinks.map(({ path, name, icon }, index) => {
+            {mobileSocialLinks.map(({ path, name, icon }, index) => {
               return (
                 <li key={index}>
                   <SheetClose asChild>
