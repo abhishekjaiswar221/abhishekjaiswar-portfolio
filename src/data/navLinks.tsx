@@ -8,7 +8,11 @@ import {
   Twitter,
   UserRound,
 } from "lucide-react";
-import { MobileNavLinksType, MobileSocialLinksType } from "./dataTypes";
+import {
+  DesktopNavLinksType,
+  MobileNavLinksType,
+  MobileSocialLinksType,
+} from "./dataTypes";
 
 export const mobileNavLinks: Array<MobileNavLinksType> = [
   { path: "/", name: "Home", icon: <Home size={22} strokeWidth={1.5} /> },
@@ -32,6 +36,13 @@ export const mobileNavLinks: Array<MobileNavLinksType> = [
     name: "Contact",
     icon: <UserRound size={22} strokeWidth={1.5} />,
   },
+];
+
+export const desktopNavLinks: Array<DesktopNavLinksType> = [
+  { path: "/", name: "Home" },
+  { path: "#skills", name: "Skills" },
+  { path: "/projects", name: "More Projects" },
+  { path: "/experience", name: "Work Experience" },
 ];
 
 export const mobileSocialLinks: Array<MobileSocialLinksType> = [

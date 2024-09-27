@@ -4,6 +4,11 @@ export interface MobileNavLinksType {
   icon: React.ReactNode;
 }
 
+export interface DesktopNavLinksType {
+  path: string;
+  name: string;
+}
+
 export interface MobileSocialLinksType {
   path: string;
   name: string;
