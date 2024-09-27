@@ -6,7 +6,7 @@ import { ChevronLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { moreProjects } from "@/data/moreProjects";
 import { MoreProjectsType } from "@/data/dataTypes";
-import MoreProjectsCard from "@/components/Card/moreProjectCard";
+import MoreProjectCard from "@/components/Card/moreProjectCard";
 
 const andika = Andika({ subsets: ["latin"], weight: "400" });
 
@@ -46,7 +46,7 @@ const Page: FC = () => {
               live,
             }: MoreProjectsType) => {
               return (
-                <MoreProjectsCard
+                <MoreProjectCard
                   key={id}
                   id={id}
                   title={title}

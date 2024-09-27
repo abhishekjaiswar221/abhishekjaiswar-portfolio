@@ -4,14 +4,10 @@ import { cn } from "@/lib/utils";
 import { Button } from "../ui/button";
 import { Noto_Sans } from "next/font/google";
 import { TechIconsType } from "@/data/dataTypes";
+import { TechCardProps } from "@/data/dataTypes";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const noto_sans = Noto_Sans({ subsets: ["latin"] });
-
-interface TechCardProps {
-  iterableArray: Array<TechIconsType>;
-  cardTitle: string;
-}
 
 const TechCard: FC<TechCardProps> = ({ iterableArray, cardTitle }) => {
   return (

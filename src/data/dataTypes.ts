@@ -1,13 +1,13 @@
-export interface TechIconsType {
-  id: number;
-  title: string;
-  imgSrc: string;
-  altText: string;
+export interface MobileNavLinksType {
+  path: string;
+  name: string;
+  icon: React.ReactNode;
 }
 
-export interface TechCardProps {
-  iterableArray: Array<TechIconsType>;
-  cardTitle: string;
+export interface MobileSocialLinksType {
+  path: string;
+  name: string;
+  icon: React.ReactNode;
 }
 
 export interface ProjectsType {
@@ -27,4 +27,16 @@ export interface MoreProjectsType {
   description: string;
   github: string;
   live: string;
+}
+
+export interface TechIconsType {
+  id: number;
+  title: string;
+  imgSrc: string;
+  altText: string;
+}
+
+export interface TechCardProps {
+  iterableArray: Array<TechIconsType>;
+  cardTitle: string;
 }
