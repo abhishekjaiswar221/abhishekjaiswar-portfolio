@@ -9,9 +9,14 @@ export interface DesktopNavLinksType {
   name: string;
 }
 
-export interface MobileSocialLinksType {
+export interface MobileSocialNavLinksType {
   path: string;
   name: string;
+  icon: React.ReactNode;
+}
+
+export interface SocialIconsType {
+  path: string;
   icon: React.ReactNode;
 }
 

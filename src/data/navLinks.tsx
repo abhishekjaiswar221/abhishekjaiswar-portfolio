@@ -11,7 +11,7 @@ import {
 import {
   DesktopNavLinksType,
   MobileNavLinksType,
-  MobileSocialLinksType,
+  MobileSocialNavLinksType,
 } from "./dataTypes";
 
 export const mobileNavLinks: Array<MobileNavLinksType> = [
@@ -45,7 +45,7 @@ export const desktopNavLinks: Array<DesktopNavLinksType> = [
   { path: "/experience", name: "Work Experience" },
 ];
 
-export const mobileSocialLinks: Array<MobileSocialLinksType> = [
+export const mobileSocialNavLinks: Array<MobileSocialNavLinksType> = [
   {
     path: "https://github.com/abhishekjaiswar221",
     name: "Github",
