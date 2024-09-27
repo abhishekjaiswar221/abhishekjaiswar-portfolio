@@ -1,24 +1,17 @@
 import React, { FC } from "react";
 import {
   Sheet,
+  SheetClose,
   SheetContent,
   SheetDescription,
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import {
-  CodeXml,
-  Github,
-  Home,
-  Linkedin,
-  Menu,
-  Monitor,
-  SquareTerminal,
-  Twitter,
-  UserRound,
-} from "lucide-react";
-import { VisuallyHidden } from "@radix-ui/react-visually-hidden";
 import Link from "next/link";
+import { Menu } from "lucide-react";
+import { mobileNavLinks } from "@/data/navLinks";
+import { mobileSocialNavLinks } from "@/data/navLinks";
+import { VisuallyHidden } from "@radix-ui/react-visually-hidden";
 
 const MobileNavigation: FC = () => {
   return (
@@ -41,99 +34,37 @@ const MobileNavigation: FC = () => {
         </VisuallyHidden>
 
         <ul className="flex h-screen flex-col items-start justify-start pt-6">
-          <li>
-            <SheetTrigger asChild>
-              <div className="flex items-center justify-center gap-2 p-4">
-                <Home size={22} strokeWidth={1.5} />
-                <Link className="text-sm" href="/">
-                  Home
-                </Link>
-              </div>
-            </SheetTrigger>
-          </li>
-          <li>
-            <SheetTrigger asChild>
-              <div className="flex items-center justify-center gap-2 p-4">
-                <SquareTerminal size={22} strokeWidth={1.5} />
-                <Link className="text-sm" href="/skills">
-                  Skills
-                </Link>
-              </div>
-            </SheetTrigger>
-          </li>
-          <li>
-            <SheetTrigger asChild>
-              <div className="flex items-center justify-center gap-2 p-4">
-                <CodeXml size={22} strokeWidth={1.5} />
-                <Link className="text-sm" href="/projects">
-                  More Projects
-                </Link>
-              </div>
-            </SheetTrigger>
-          </li>
-          <li>
-            <SheetTrigger asChild>
-              <div className="flex items-center justify-center gap-2 p-4">
-                <Monitor size={22} strokeWidth={1.5} />
-                <Link className="text-sm" href="/experience">
-                  Work Experience
-                </Link>
-              </div>
-            </SheetTrigger>
-          </li>
-          <li>
-            <SheetTrigger asChild>
-              <div className="flex items-center justify-center gap-2 p-4">
-                <UserRound size={22} strokeWidth={1.5} />
-                <Link className="text-sm" href="/contact">
-                  Contact
-                </Link>
-              </div>
-            </SheetTrigger>
-          </li>
+          <div>
+            {mobileNavLinks.map(({ path, name, icon }, index) => {
+              return (
+                <li key={index}>
+                  <SheetClose asChild>
+                    <Link className="flex gap-2 p-4 text-sm" href={path}>
+                      {icon}
+                      {name}
+                    </Link>
+                  </SheetClose>
+                </li>
+              );
+            })}
+          </div>
           <div className="pt-5">
             <h1>Socials</h1>
           </div>
-          <li>
-            <SheetTrigger asChild>
-              <div className="flex items-center justify-center gap-2 p-4">
-                <Github className="text-github" size={22} strokeWidth={1.5} />
-                <Link
-                  className="text-sm"
-                  href="https://github.com/abhishekjaiswar221"
-                >
-                  Github
-                </Link>
-              </div>
-            </SheetTrigger>
-          </li>
-          <li>
-            <SheetTrigger asChild>
-              <div className="flex items-center justify-center gap-2 p-4">
-                <Linkedin
-                  className="text-linkedin"
-                  size={22}
-                  strokeWidth={1.5}
-                />
-                <Link
-                  className="text-sm"
-                  href="https://linkedin.com/in/abhishekjai221"
-                >
-                  LinkedIn
-                </Link>
-              </div>
-            </SheetTrigger>
-          </li>
-          <li>
-            <SheetTrigger asChild>
-              <div className="flex items-center justify-center gap-2 p-4">
-                <Twitter className="text-twitter" size={22} strokeWidth={1.5} />
-                <Link className="text-sm" href="https://x.com/abhishekjai221">
-                  Twitter
-                </Link>
-              </div>
-            </SheetTrigger>
-          </li>
+          <div>
+            {mobileSocialNavLinks.map(({ path, name, icon }, index) => {
+              return (
+                <li key={index}>
+                  <SheetClose asChild>
+                    <Link className="flex gap-2 p-4 text-sm" href={path}>
+                      {icon}
+                      {name}
+                    </Link>
+                  </SheetClose>
+                </li>
+              );
+            })}
+          </div>
         </ul>
       </SheetContent>
     </Sheet>
