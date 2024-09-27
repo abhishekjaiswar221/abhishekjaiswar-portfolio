@@ -11,7 +11,7 @@ import { cn } from "@/lib/utils";
 import { Button } from "../ui/button";
 import { Noto_Sans } from "next/font/google";
 import { MoreProjectsType } from "@/data/dataTypes";
-import { ExternalLink, Github } from "lucide-react";
+import { Github, SquareArrowOutUpRight } from "lucide-react";
 import { Badge } from "../ui/badge";
 
 const noto_sans = Noto_Sans({ subsets: ["latin"] });
@@ -53,7 +53,7 @@ const MoreProjectsCard: FC<MoreProjectsType> = ({
               variant="default"
               className="bg-transparent px-0 text-zinc-400 shadow-none hover:bg-zinc-800 hover:text-indigo-400"
             >
-              <Link href={github || "/"}>
+              <Link href={github || "/"} target="_blank">
                 <Github size={18} strokeWidth={1.5} />
               </Link>
             </Button>
@@ -63,8 +63,8 @@ const MoreProjectsCard: FC<MoreProjectsType> = ({
               variant="default"
               className="bg-transparent px-0 text-zinc-400 shadow-none hover:bg-zinc-800 hover:text-indigo-400"
             >
-              <Link href={live || "/"}>
-                <ExternalLink size={18} strokeWidth={1.5} />
+              <Link href={live || "/"} target="_blank">
+                <SquareArrowOutUpRight size={18} strokeWidth={1.5} />
               </Link>
             </Button>
           </div>

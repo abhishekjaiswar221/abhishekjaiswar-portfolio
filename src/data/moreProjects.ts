@@ -30,7 +30,7 @@ export const moreProjects: Array<MoreProjectsType> = [
   {
     id: 4,
     title: "Text Utils Word Counter",
-    techStacks: ["Javascript", "React JS", "React Bootstrap", "Bootstrap"],
+    techStacks: ["Javascript", "React", "React Bootstrap", "Bootstrap"],
     description:
       "This app helps you to track your words and characters using the app",
     github: "https://github.com/abhishekjaiswar221/textutils-word-counter",
@@ -39,7 +39,7 @@ export const moreProjects: Array<MoreProjectsType> = [
   {
     id: 5,
     title: "News Monkey",
-    techStacks: ["Javascript", "React JS", "Bootstrap"],
+    techStacks: ["Javascript", "React", "Bootstrap"],
     description:
       "This application provides news stories from all around the world",
     github: "https://github.com/abhishekjaiswar221/news-monkey",

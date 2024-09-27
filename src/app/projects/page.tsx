@@ -6,7 +6,7 @@ import { ChevronLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { moreProjects } from "@/data/moreProjects";
 import { MoreProjectsType } from "@/data/dataTypes";
-import MoreProjectsCard from "@/components/Card/moreProjectsCard";
+import MoreProjectsCard from "@/components/Card/moreProjectCard";
 
 const andika = Andika({ subsets: ["latin"], weight: "400" });
 
@@ -30,12 +30,12 @@ const Page: FC = () => {
             <span>Go back</span>
           </Link>
         </Button>
-        <h3 className="mt-4 scroll-m-20 text-xl font-semibold tracking-tight md:text-2xl lg:text-3xl">
+        <h3 className="mt-5 scroll-m-20 text-xl font-semibold tracking-tight md:text-2xl lg:text-3xl">
           More Projects
         </h3>
       </div>
       <div className="mt-8">
-        <ul className="flex flex-col gap-4">
+        <ul className="flex flex-col gap-5">
           {moreProjects.map(
             ({
               id,
