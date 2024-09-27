@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import Link from "next/link";
 import { Copyright } from "lucide-react";
-import SocialIcon from "../component/socialIcon";
+import Social from "../component/social";
 
 const FooterNavigation: FC = () => {
   return (
@@ -14,7 +14,7 @@ const FooterNavigation: FC = () => {
           <p className="text-center">Stay Connected</p>
         </div>
         <div>
-          <SocialIcon styles={"text-zinc-200 lg:text-zinc-400"} />
+          <Social styles={"text-zinc-200 lg:text-zinc-400"} />
         </div>
       </div>
       <div className="pb-1 pt-2">
