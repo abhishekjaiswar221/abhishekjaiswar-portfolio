@@ -4,7 +4,7 @@ export const projects: Array<ProjectsType> = [
   {
     id: 1,
     title: "The Shopping Booth",
-    techStacks: "React Js, Redux, Javascript, Shadcn/ui",
+    techStacks: "React, Redux, Javascript, Shadcn/ui, Tailwind",
     imgSrc: "preview.png",
     altText: "The Shopping Booth",
     github: "https://github.com/abhishekjaiswar221/the-shopping-booth",
@@ -13,7 +13,7 @@ export const projects: Array<ProjectsType> = [
   {
     id: 2,
     title: "Taskify Cloud Todo",
-    techStacks: "React Js, Javascript, Shadcn/ui, Tailwind",
+    techStacks: "React Js, Javascript, Shadcn/ui, Tailwind, Vite Js",
     imgSrc: "jetbrains.jpg",
     altText: "Taskify Cloud Todo",
     github: "https://github.com/abhishekjaiswar221/taskify-cloud-todo",
@@ -21,20 +21,11 @@ export const projects: Array<ProjectsType> = [
   },
   {
     id: 3,
-    title: "Microsoft UI Clone",
-    techStacks: "React Js, Javascript, Tailwind",
+    title: "The Annapurna's",
+    techStacks: "HTML, Bootstrap CSS, Js, Java, JSP, Servlet, MySQL",
     imgSrc: "webstorm.png",
-    altText: "Microsoft UI Clone",
-    github: "https://github.com/abhishekjaiswar221/microsoft-ui-clone",
-    live: "https://microsoftui.vercel.app",
+    altText: "The Annapurna's",
+    github: "https://github.com/abhishekjaiswar221/the-annapurnas",
+    live: "",
   },
-  // {
-  //   id: 4,
-  //   title: "News Monkey",
-  //   techStacks: "React Js, Javascript, Bootstrap",
-  //   imgSrc: "webstorm.png",
-  //   altText: "News Monkey",
-  //   github: "https://github.com/abhishekjaiswar221/news-monkey",
-  //   live: "https://microsoftui.vercel.app",
-  // },
 ];

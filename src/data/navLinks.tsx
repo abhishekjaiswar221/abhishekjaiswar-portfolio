@@ -1,9 +1,9 @@
 import {
+  BookImage,
   CodeXml,
   Github,
   Home,
   Linkedin,
-  Monitor,
   SquareTerminal,
   Twitter,
   UserRound,
@@ -17,6 +17,11 @@ import {
 export const mobileNavLinks: Array<MobileNavLinksType> = [
   { path: "/", name: "Home", icon: <Home size={22} strokeWidth={1.5} /> },
   {
+    path: "/about",
+    name: "About",
+    icon: <BookImage size={22} strokeWidth={1.5} />,
+  },
+  {
     path: "#skills",
     name: "Skills",
     icon: <SquareTerminal size={22} strokeWidth={1.5} />,
@@ -27,11 +32,6 @@ export const mobileNavLinks: Array<MobileNavLinksType> = [
     icon: <CodeXml size={22} strokeWidth={1.5} />,
   },
   {
-    path: "/experience",
-    name: "Work Experience",
-    icon: <Monitor size={22} strokeWidth={1.5} />,
-  },
-  {
     path: "/contact",
     name: "Contact",
     icon: <UserRound size={22} strokeWidth={1.5} />,
@@ -40,9 +40,9 @@ export const mobileNavLinks: Array<MobileNavLinksType> = [
 
 export const desktopNavLinks: Array<DesktopNavLinksType> = [
   { path: "/", name: "Home" },
+  { path: "/about", name: "About" },
   { path: "#skills", name: "Skills" },
   { path: "/projects", name: "More Projects" },
-  { path: "/experience", name: "Work Experience" },
 ];
 
 export const mobileSocialNavLinks: Array<MobileSocialNavLinksType> = [

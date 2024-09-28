@@ -9,7 +9,7 @@ const ProfilePhoto: FC<ProfilePhotoProps> = ({ styles }) => {
   return (
     <Avatar className={`${styles}`}>
       <AvatarImage src="/images/profile-picture.png" alt="Profile Photo" />
-      <AvatarFallback>AJ</AvatarFallback>
+      <AvatarFallback className="text-zinc-900">AJ</AvatarFallback>
     </Avatar>
   );
 };
