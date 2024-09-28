@@ -19,7 +19,7 @@ const config = {
     },
     extend: {
       colors: {
-        // Socials Icon Colors
+        // Social Icons Colors
         github: "var(--github)",
         linkedin: "var(--linkedin)",
         twitter: "var(--twitter)",

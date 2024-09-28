@@ -56,7 +56,11 @@ const MobileNavigation: FC = () => {
               return (
                 <li key={index}>
                   <SheetClose asChild>
-                    <Link className="flex gap-2 p-4 text-sm" href={path}>
+                    <Link
+                      className="flex gap-2 p-4 text-sm"
+                      href={path}
+                      target="_blank"
+                    >
                       {icon}
                       {name}
                     </Link>
