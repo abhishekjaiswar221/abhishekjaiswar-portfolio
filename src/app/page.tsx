@@ -1,9 +1,10 @@
 import React, { FC } from "react";
 import Hero from "@/components/hero";
 import { cn } from "@/lib/utils";
+import Skills from "@/components/skills";
 import { Andika } from "next/font/google";
 import Projects from "@/components/projects";
-import Skills from "@/components/skills";
+import BlurFade from "@/components/magicui/blur-fade";
 
 const andika = Andika({ subsets: ["latin"], weight: "400" });
 
@@ -16,7 +17,9 @@ const Home: FC = () => {
       )}
     >
       <section id="hero">
-        <Hero />
+        <BlurFade delay={0.25} inView>
+          <Hero />
+        </BlurFade>
       </section>
       <section id="projects">
         <Projects />

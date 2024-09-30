@@ -5,18 +5,26 @@ import Link from "next/link";
 import { Button } from "./ui/button";
 import Socials from "./component/socials";
 import ProfilePhoto from "./component/profilePhoto";
+import HyperText from "./magicui/hyper-text";
 
 const Hero: FC = () => {
   return (
     <section className="flex h-fit w-full flex-col gap-10 md:flex-row md:items-start md:justify-center md:gap-2 lg:gap-4 lg:pb-24 lg:pt-8">
       <div className="basis-2/3 space-y-6">
-        <div className="space-y-3">
+        <div className="space-y-2">
           <h1 className="scroll-m-20 text-balance text-3xl font-extrabold tracking-tight lg:text-4xl xl:text-5xl">
             Hola 👋🏼, I&apos;m{" "}
             <span className="text-indigo-500">Abhishek Jaiswar</span>
           </h1>
-          <h1 className="scroll-m-20 text-xl font-extrabold tracking-tight text-zinc-400 md:text-2xl lg:text-3xl xl:text-4xl">
-            <span className="text-indigo-500">Frontend</span> Web Developer
+          <h1 className="flex scroll-m-20 items-center justify-start text-xl font-extrabold tracking-tight text-zinc-400 md:text-2xl lg:text-3xl xl:text-4xl">
+            <div className="w-[108px] md:w-32 lg:w-40 xl:w-48">
+              <HyperText
+                className="scroll-m-20 text-xl font-extrabold tracking-tight text-indigo-500 md:text-2xl lg:text-3xl xl:text-4xl"
+                text="Frontend"
+                duration={100}
+              />
+            </div>
+            Web Developer
           </h1>
         </div>
         <div>
@@ -37,9 +45,7 @@ const Hero: FC = () => {
         </div>
       </div>
       <div className="basis-1/3 space-y-4">
-        <div>
-          <ProfilePhoto styles={"w-full h-full rounded-xl aspect-square"} />
-        </div>
+        <ProfilePhoto styles={"aspect-square w-full h-full rounded-xl"} />
         <div>
           <Socials styles={"text-zinc-400"} />
         </div>
