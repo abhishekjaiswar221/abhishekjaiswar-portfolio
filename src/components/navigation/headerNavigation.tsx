@@ -5,6 +5,7 @@ import ProfilePhoto from "../component/profilePhoto";
 import DesktopNavigation from "../component/desktopNavigation";
 import MobileNavigation from "../component/mobileNavigation";
 import Link from "next/link";
+import BlurIn from "../ui/blur-in";
 
 const headerNavigation: FC = () => {
   return (
@@ -13,7 +14,11 @@ const headerNavigation: FC = () => {
         <div className="flex w-full items-center justify-between px-6 py-5 antialiased md:px-10 lg:w-fit lg:rounded-2xl lg:border lg:border-zinc-700/60 lg:bg-zinc-800 lg:px-4 lg:py-[10px]">
           <div className="flex items-center justify-center gap-2 pr-6">
             <div>
-              <ProfilePhoto styles={"h-7 w-7"} />
+              <BlurIn
+                word={<ProfilePhoto styles={"h-7 w-7"} />}
+                className="aspect-square h-full w-full rounded-xl"
+                duration={0.6}
+              />
             </div>
             <div>
               <Link
