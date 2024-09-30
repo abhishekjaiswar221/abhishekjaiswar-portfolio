@@ -22,7 +22,7 @@ export const mobileNavLinks: Array<MobileNavLinksType> = [
     icon: <BookImage size={22} strokeWidth={1.5} />,
   },
   {
-    path: "#skills",
+    path: "/#skills",
     name: "Skills",
     icon: <SquareTerminal size={22} strokeWidth={1.5} />,
   },
@@ -41,7 +41,7 @@ export const mobileNavLinks: Array<MobileNavLinksType> = [
 export const desktopNavLinks: Array<DesktopNavLinksType> = [
   { path: "/", name: "Home" },
   { path: "/about", name: "About" },
-  { path: "#skills", name: "Skills" },
+  { path: "/#skills", name: "Skills" },
   { path: "/projects", name: "More Projects" },
 ];
 
