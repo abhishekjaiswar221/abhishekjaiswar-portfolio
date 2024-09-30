@@ -5,7 +5,7 @@ import ProfilePhoto from "../component/profilePhoto";
 import DesktopNavigation from "../component/desktopNavigation";
 import MobileNavigation from "../component/mobileNavigation";
 import Link from "next/link";
-import BlurIn from "../ui/blur-in";
+import BlurIn from "../magicui/blur-in";
 
 const HeaderNavigation: FC = () => {
   return (

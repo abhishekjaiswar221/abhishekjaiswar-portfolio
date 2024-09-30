@@ -4,7 +4,7 @@ import { cn } from "@/lib/utils";
 import Skills from "@/components/skills";
 import { Andika } from "next/font/google";
 import Projects from "@/components/projects";
-import { FadeText } from "@/components/ui/fade-text";
+import BlurFade from "@/components/magicui/blur-fade";
 
 const andika = Andika({ subsets: ["latin"], weight: "400" });
 
@@ -17,13 +17,9 @@ const Home: FC = () => {
       )}
     >
       <section id="hero">
-        <FadeText
-          direction="up"
-          framerProps={{
-            show: { transition: { delay: 0.2 } },
-          }}
-          text={<Hero />}
-        />
+        <BlurFade delay={0.25} inView>
+          <Hero />
+        </BlurFade>
       </section>
       <section id="projects">
         <Projects />
