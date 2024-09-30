@@ -7,7 +7,7 @@ import MobileNavigation from "../component/mobileNavigation";
 import Link from "next/link";
 import BlurIn from "../ui/blur-in";
 
-const headerNavigation: FC = () => {
+const HeaderNavigation: FC = () => {
   return (
     <header className="sticky top-0 z-10 bg-opacity-30 backdrop-blur-lg backdrop-filter lg:mx-auto lg:max-w-5xl lg:bg-opacity-0 lg:px-8 lg:py-8 lg:backdrop-blur-0 lg:backdrop-filter-none">
       <div className="lg:flex lg:justify-center">
@@ -41,4 +41,4 @@ const headerNavigation: FC = () => {
   );
 };
 
-export default headerNavigation;
+export default HeaderNavigation;

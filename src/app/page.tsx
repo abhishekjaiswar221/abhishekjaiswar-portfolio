@@ -1,9 +1,10 @@
 import React, { FC } from "react";
 import Hero from "@/components/hero";
 import { cn } from "@/lib/utils";
+import Skills from "@/components/skills";
 import { Andika } from "next/font/google";
 import Projects from "@/components/projects";
-import Skills from "@/components/skills";
+import { FadeText } from "@/components/ui/fade-text";
 
 const andika = Andika({ subsets: ["latin"], weight: "400" });
 
@@ -16,7 +17,13 @@ const Home: FC = () => {
       )}
     >
       <section id="hero">
-        <Hero />
+        <FadeText
+          direction="up"
+          framerProps={{
+            show: { transition: { delay: 0.2 } },
+          }}
+          text={<Hero />}
+        />
       </section>
       <section id="projects">
         <Projects />
