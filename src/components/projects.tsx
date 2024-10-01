@@ -1,3 +1,5 @@
+"use client";
+
 import { FC } from "react";
 import { projects } from "@/data/projects";
 import { ProjectsType } from "@/data/dataTypes";

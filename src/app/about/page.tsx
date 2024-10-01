@@ -1,3 +1,5 @@
+"use client";
+
 import React, { FC } from "react";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
@@ -41,7 +43,7 @@ const Page: FC = () => {
         </p>
       </div>
       <div className="mt-8">
-        <p className="text-justify leading-7 text-zinc-300">
+        <p className="text-justify leading-7 text-zinc-400">
           I am a Full Stack Web Developer with a strong emphasis on Frontend
           Development, I am based in Mumbai, India. With a Bachelor&apos;s
           degree in Information Technology from Mumbai University and currently
@@ -54,7 +56,7 @@ const Page: FC = () => {
           applications.
         </p>
 
-        <p className="mt-6 text-balance text-justify leading-7 text-zinc-300">
+        <p className="mt-6 text-balance text-justify leading-7 text-zinc-400">
           As a skilled web developer, I possess a strong foundation in modern
           technologies like React, Next.js, and Tailwind CSS. My expertise lies
           in crafting visually appealing, accessible, and high-performance
