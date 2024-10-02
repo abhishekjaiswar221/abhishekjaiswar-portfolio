@@ -1,11 +1,10 @@
 "use client";
 
 import React, { FC } from "react";
-import Link from "next/link";
-import { Button } from "./ui/button";
 import Socials from "./component/socials";
 import ProfilePhoto from "./component/profilePhoto";
 import HyperText from "./magicui/hyper-text";
+import ConnectDialog from "./component/connectDialog";
 
 const Hero: FC = () => {
   return (
@@ -36,12 +35,7 @@ const Hero: FC = () => {
           </p>
         </div>
         <div className="hidden lg:block">
-          <Button
-            asChild
-            className="rounded-lg border-2 border-indigo-500 bg-indigo-500 text-zinc-200 hover:bg-transparent"
-          >
-            <Link href="/connect">Connect</Link>
-          </Button>
+          <ConnectDialog />
         </div>
       </div>
       <div className="basis-1/3 space-y-4">

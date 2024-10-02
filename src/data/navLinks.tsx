@@ -32,8 +32,8 @@ export const mobileNavLinks: Array<MobileNavLinksType> = [
     icon: <CodeXml size={22} strokeWidth={1.5} />,
   },
   {
-    path: "/contact",
-    name: "Contact",
+    path: "/connect",
+    name: "Connect",
     icon: <UserRound size={22} strokeWidth={1.5} />,
   },
 ];
