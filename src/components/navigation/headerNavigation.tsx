@@ -15,8 +15,7 @@ const HeaderNavigation: FC = () => {
           <div className="flex items-center justify-center gap-2 pr-6">
             <div>
               <BlurIn
-                word={<ProfilePhoto styles={"h-7 w-7"} />}
-                className="aspect-square h-full w-full rounded-xl"
+                word={<ProfilePhoto styles={"h-7 w-7 rounded-full"} />}
                 duration={0.6}
               />
             </div>
