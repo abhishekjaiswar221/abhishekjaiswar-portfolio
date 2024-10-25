@@ -39,9 +39,9 @@ export const frontendTechIcons: Array<TechIconsType> = [
   },
   {
     id: 7,
-    title: "Radix UI",
-    imgSrc: "radixui.svg",
-    altText: "Radix UI Logo",
+    title: "Magic UI",
+    imgSrc: "magicui.png",
+    altText: "Magic UI Logo",
   },
   // {
   //   id: 8,

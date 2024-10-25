@@ -57,14 +57,14 @@ const Page: FC = () => {
 
         <p className="mt-6 text-balance text-justify leading-7 text-zinc-400">
           As a skilled web developer, I possess a strong foundation in modern
-          technologies like React, Next.js, and Tailwind CSS. My expertise lies
-          in crafting visually appealing, accessible, and high-performance
-          websites that deliver exceptional user experiences. I am dedicated to
-          staying up-to-date with the latest industry trends and continuously
-          honing my skills to deliver innovative and impactful web solutions.
-          With a passion for building websites that exceed expectations, I am
-          committed to creating digital experiences that leave a lasting
-          impression.
+          technologies like React, Next.js, Shadcn UI and Tailwind CSS. My
+          expertise lies in crafting visually appealing, accessible, and
+          high-performance websites that deliver exceptional user experiences. I
+          am dedicated to staying up-to-date with the latest industry trends and
+          continuously honing my skills to deliver innovative and impactful web
+          solutions. With a passion for building websites that exceed
+          expectations, I am committed to creating digital experiences that
+          leave a lasting impression.
         </p>
       </div>
     </main>
