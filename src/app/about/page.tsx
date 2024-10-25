@@ -45,15 +45,14 @@ const Page: FC = () => {
       <div className="mt-8">
         <p className="text-justify leading-7 text-zinc-400">
           I am a Full Stack Web Developer with a strong emphasis on Frontend
-          Development, I am based in Mumbai, India. With a Bachelor&apos;s
-          degree in Information Technology from Mumbai University and currently
-          pursuing a Master&apos;s degree in Information Technology from Guru
-          Nanak College of Arts, Science, and Commerce (affiliated with the
-          University of Mumbai), I am committed to staying at the forefront of
-          web development technologies. My academic background has equipped me
-          with a solid foundation in programming, design principles, and
-          problem-solving, enabling me to create innovative and user-centric web
-          applications.
+          Development based in Mumbai, India. With a Bachelor&apos;s degree in
+          Information Technology from Guru Nanak College of Arts, Science, and
+          Commerce and currently pursuing a Master&apos;s degree in Information
+          Technology from Guru Nanak College of Arts, Science, and Commerce , I
+          am committed to staying at the forefront of web development
+          technologies. My academic background has equipped me with a solid
+          foundation in programming, design principles, and problem-solving,
+          enabling me to create innovative and user-centric web applications.
         </p>
 
         <p className="mt-6 text-balance text-justify leading-7 text-zinc-400">
