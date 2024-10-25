@@ -21,7 +21,7 @@ const ConnectDialog = () => {
           Connect
         </Button>
       </DialogTrigger>
-      <DialogContent className="sm:max-w-96">
+      <DialogContent className="w-80 rounded-lg md:w-96">
         <DialogHeader>
           <DialogTitle className="text-center">Get in touch</DialogTitle>
         </DialogHeader>

@@ -18,9 +18,9 @@ const Hero: FC = () => {
           <h1 className="flex scroll-m-20 items-center justify-start text-xl font-extrabold tracking-tight text-zinc-400 md:text-2xl lg:text-3xl xl:text-4xl">
             <div className="w-[108px] md:w-32 lg:w-40 xl:w-48">
               <HyperText
-                className="scroll-m-20 text-xl font-extrabold tracking-tight text-indigo-500 md:text-2xl lg:text-3xl xl:text-4xl"
+                className="text-indigo-500"
                 text="Frontend"
-                duration={100}
+                animateOnLoad={false}
               />
             </div>
             Web Developer
