@@ -22,7 +22,7 @@ export const projects: Array<ProjectsType> = [
   {
     id: 3,
     title: "The Annapurna's",
-    techStacks: "HTML, Bootstrap CSS, Js, Java, JSP, Servlet, MySQL",
+    techStacks: "HTML, Bootstrap, Js, Java, JSP, Servlet, MySQL",
     imgSrc: "annapurnas.png",
     altText: "The Annapurna's",
     github: "https://github.com/abhishekjaiswar221/the-annapurnas",

@@ -8,9 +8,9 @@ import ConnectDialog from "./component/connectDialog";
 
 const Hero: FC = () => {
   return (
-    <section className="flex h-fit w-full flex-col gap-10 md:flex-row md:items-start md:justify-center md:gap-2 lg:gap-4 lg:pb-24 lg:pt-8">
-      <div className="basis-2/3 space-y-6">
-        <div className="space-y-2">
+    <section className="flex h-fit w-full flex-col gap-6 md:flex-row md:items-start md:justify-center md:gap-2 lg:gap-4 lg:pb-24 lg:pt-8">
+      <div className="basis-2/3">
+        <div>
           <h1 className="scroll-m-20 text-balance text-3xl font-extrabold tracking-tight lg:text-4xl xl:text-5xl">
             Hola 👋🏼, I&apos;m{" "}
             <span className="text-indigo-500">Abhishek Jaiswar</span>
