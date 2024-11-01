@@ -29,7 +29,7 @@ const ProjectCard: FC<ProjectsType> = ({
             height={700}
             className="aspect-video object-cover"
           />
-          <div className="flex flex-col p-4">
+          <div className="flex flex-col border-t border-zinc-200 p-4">
             <div className="flex font-semibold">{title}</div>
             <div className="text-info flex text-xs text-zinc-600">
               {techStacks}

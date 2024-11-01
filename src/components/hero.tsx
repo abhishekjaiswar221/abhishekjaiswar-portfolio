@@ -20,7 +20,7 @@ const Hero: FC = () => {
               <HyperText
                 className="text-indigo-500"
                 text="Frontend"
-                duration={100}
+                animateOnLoad={false}
               />
             </div>
             Web Developer
