@@ -1,3 +1,5 @@
+import React from "react";
+
 export interface MobileNavLinksType {
   path: string;
   name: string;

@@ -23,11 +23,11 @@ const ProjectCard: FC<ProjectsType> = ({
       <Link key={id} target="_blank" href={live || github || "/"}>
         <div className="flex flex-col overflow-hidden overflow-ellipsis rounded-lg bg-zinc-50 text-zinc-800">
           <Image
+            className="aspect-video object-cover"
             src={`/projects/${imgSrc}`}
-            alt={altText}
             width={700}
             height={700}
-            className="aspect-video object-cover"
+            alt={altText}
           />
           <div className="flex flex-col border-t border-zinc-200 p-4">
             <div className="flex font-semibold">{title}</div>

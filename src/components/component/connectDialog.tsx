@@ -23,7 +23,7 @@ const ConnectDialog = () => {
       </DialogTrigger>
       <DialogContent className="w-80 rounded-lg md:w-96">
         <DialogHeader>
-          <DialogTitle className="text-center">Get in touch</DialogTitle>
+          <DialogTitle className="text-center">Get in Touch</DialogTitle>
         </DialogHeader>
         <VisuallyHidden>
           <DialogDescription>Contact me</DialogDescription>
