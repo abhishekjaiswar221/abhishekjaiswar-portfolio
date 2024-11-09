@@ -1,11 +1,11 @@
 "use client";
 
 import { FC } from "react";
-import { projects } from "@/data/projects";
-import { ProjectsType } from "@/data/dataTypes";
-import ProjectCard from "./Card/projectCard";
-import { Button } from "./ui/button";
 import Link from "next/link";
+import { Button } from "./ui/button";
+import { projects } from "@/data/projects";
+import ProjectCard from "./Card/projectCard";
+import { ProjectsType } from "@/data/dataTypes";
 
 const Projects: FC = () => {
   return (

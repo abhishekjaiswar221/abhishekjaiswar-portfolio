@@ -4,7 +4,7 @@ export const projects: Array<ProjectsType> = [
   {
     id: 1,
     title: "The Shopping Booth",
-    techStacks: "React, Redux, Javascript, Shadcn/ui, Tailwind",
+    techStacks: "React, Redux, Javascript, Shadcn UI, Tailwind",
     imgSrc: "shopping-booth.png",
     altText: "The Shopping Booth",
     github: "https://github.com/abhishekjaiswar221/the-shopping-booth",
@@ -13,7 +13,7 @@ export const projects: Array<ProjectsType> = [
   {
     id: 2,
     title: "Taskify Cloud Todo",
-    techStacks: "React Js, Javascript, Shadcn/ui, Tailwind, Vite Js",
+    techStacks: "React Js, Javascript, Shadcn UI, Tailwind, Vite Js",
     imgSrc: "taskify-todo.png",
     altText: "Taskify Cloud Todo",
     github: "https://github.com/abhishekjaiswar221/taskify-cloud-todo",
@@ -22,7 +22,7 @@ export const projects: Array<ProjectsType> = [
   {
     id: 3,
     title: "The Annapurna's",
-    techStacks: "HTML, Bootstrap CSS, Js, Java, JSP, Servlet, MySQL",
+    techStacks: "HTML, Bootstrap, Js, Java, JSP, Servlet, MySQL",
     imgSrc: "annapurnas.png",
     altText: "The Annapurna's",
     github: "https://github.com/abhishekjaiswar221/the-annapurnas",

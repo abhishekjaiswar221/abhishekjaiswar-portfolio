@@ -33,9 +33,9 @@ export const frontendTechIcons: Array<TechIconsType> = [
   },
   {
     id: 6,
-    title: "Shadcn/UI",
+    title: "Shadcn UI",
     imgSrc: "shadcnui.svg",
-    altText: "Shadcn/ui Logo",
+    altText: "Shadcn UI Logo",
   },
   {
     id: 7,
