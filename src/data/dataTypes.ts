@@ -1,14 +1,9 @@
 import React from "react";
 
-export interface MobileNavLinksType {
+export interface NavLinksType {
   path: string;
   name: string;
   icon: React.ReactNode;
-}
-
-export interface DesktopNavLinksType {
-  path: string;
-  name: string;
 }
 
 export interface MobileSocialNavLinksType {

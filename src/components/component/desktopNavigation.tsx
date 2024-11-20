@@ -10,13 +10,13 @@ import {
 } from "@/components/ui/navigation-menu";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
-import { desktopNavLinks } from "@/data/navLinks";
+import { navLinks } from "@/data/navLinks";
 
 const DesktopNavigation: FC = () => {
   return (
     <NavigationMenu className="hidden text-zinc-400 lg:block">
       <NavigationMenuList className="space-x-4">
-        {desktopNavLinks.map(({ name, path }, index) => {
+        {navLinks.map(({ name, path }, index) => {
           return (
             <NavigationMenuItem key={index}>
               <NavigationMenuLink
