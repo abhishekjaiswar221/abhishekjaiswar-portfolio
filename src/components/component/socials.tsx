@@ -12,7 +12,7 @@ interface SocialsProps {
 const Socials: FC<SocialsProps> = ({ styles }) => {
   const socialIcons: Array<SocialIconsType> = [
     {
-      path: "http://github.com/abhishekjaiswar221",
+      path: "https://github.com/abhishekjaiswar221",
       icon: (
         <Github
           className={`${styles} box-content rounded-lg p-1 hover:bg-zinc-800 hover:text-indigo-400`}

@@ -11,7 +11,7 @@ import {
 } from "@/components/ui/sheet";
 import Link from "next/link";
 import { Menu } from "lucide-react";
-import { mobileNavLinks } from "@/data/navLinks";
+import { navLinks } from "@/data/navLinks";
 import { mobileSocialNavLinks } from "@/data/navLinks";
 import { VisuallyHidden } from "@radix-ui/react-visually-hidden";
 
@@ -37,7 +37,7 @@ const MobileNavigation: FC = () => {
 
         <ul className="flex h-screen flex-col items-start justify-start pt-6">
           <div>
-            {mobileNavLinks.map(({ path, name, icon }, index) => {
+            {navLinks.map(({ path, name, icon }, index) => {
               return (
                 <li key={index}>
                   <SheetClose asChild>
