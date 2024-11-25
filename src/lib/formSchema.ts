@@ -1,6 +1,7 @@
 import { z, ZodSchema } from "zod";
 
 export const FormSchema: ZodSchema = z.object({
+  subject: z.string(),
   name: z
     .string()
     .min(1, {

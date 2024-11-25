@@ -8,7 +8,6 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { useState } from "react";
-import { DialogClose } from "../ui/dialog";
 import { Input } from "@/components/ui/input";
 import { FormSchema } from "@/lib/formSchema";
 import { Button } from "@/components/ui/button";
@@ -19,6 +18,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm, SubmitHandler } from "react-hook-form";
 
 interface ContactFormInputs {
+  subject: string;
   name: string;
   email: string;
   message: string;
@@ -30,6 +30,7 @@ const ContactForm: React.FC = () => {
   const form = useForm<ContactFormInputs>({
     resolver: zodResolver(FormSchema),
     defaultValues: {
+      subject: "You've got a new message",
       name: "",
       email: "",
       message: "",
@@ -38,11 +39,13 @@ const ContactForm: React.FC = () => {
 
   const onSubmit: SubmitHandler<ContactFormInputs> = async (data) => {
     setLoading(true);
+
     const formData = new FormData();
     formData.append(
       "access_key",
       `${process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY}`
     );
+    formData.append("subject", data.subject);
     formData.append("name", data.name);
     formData.append("email", data.email);
     formData.append("message", data.message);
@@ -55,13 +58,15 @@ const ContactForm: React.FC = () => {
       },
       body: JSON.stringify(Object.fromEntries(formData)),
     });
+
     setLoading(false);
+
     const result = await response.json();
     if (result.success) {
-      toast({
-        description: "Your form has been submitted!",
-      });
       form.reset();
+      toast({
+        description: `Thank you, ${data.name}! Your message has been sent.`,
+      });
     } else {
       toast({
         description: "Error submitting the form!",
@@ -122,6 +127,7 @@ const ContactForm: React.FC = () => {
         />
         <Button
           type="submit"
+          disabled={loading}
           className="w-full rounded-lg border-2 border-indigo-500 bg-indigo-500 text-zinc-200 hover:bg-transparent"
         >
           {loading ? (
