@@ -34,7 +34,7 @@ const FooterNavigation: FC = () => {
       <div className="flex items-center justify-center gap-1">
         <Copyright className="pt-[2px]" size={15} strokeWidth={1.5} />
         <p className="text-center text-sm">
-          {Date().toString().slice(11, 15)} All Rights Reserved
+          {new Date().getFullYear()} All Rights Reserved
         </p>
       </div>
       <div>

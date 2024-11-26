@@ -45,7 +45,7 @@ const Socials: FC<SocialsProps> = ({ styles }) => {
 
   return (
     <div className="flex items-center justify-center gap-5">
-      {socialIcons.map(({ path, icon }, index) => {
+      {socialIcons.map(({ path, icon }: SocialIconsType, index: number) => {
         return (
           <Link key={index} href={path} target="_blank">
             {icon}

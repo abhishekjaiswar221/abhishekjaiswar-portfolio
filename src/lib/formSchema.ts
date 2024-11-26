@@ -1,6 +1,11 @@
 import { z, ZodSchema } from "zod";
 
-export const FormSchema: ZodSchema = z.object({
+export const FormSchema: ZodSchema<{
+  subject: string;
+  name: string;
+  email: string;
+  message: string;
+}> = z.object({
   subject: z.string(),
   name: z
     .string()

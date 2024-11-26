@@ -1,5 +1,3 @@
-"use client";
-
 import React, { FC } from "react";
 import {
   Card,
@@ -10,11 +8,11 @@ import {
 } from "../ui/card";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
+import { Badge } from "../ui/badge";
 import { Button } from "../ui/button";
 import { Noto_Sans } from "next/font/google";
 import { MoreProjectsType } from "@/data/dataTypes";
 import { Github, SquareArrowOutUpRight } from "lucide-react";
-import { Badge } from "../ui/badge";
 
 const noto_sans = Noto_Sans({ subsets: ["latin"] });
 
@@ -25,7 +23,7 @@ const MoreProjectCard: FC<MoreProjectsType> = ({
   description,
   github,
   live,
-}) => {
+}: MoreProjectsType) => {
   return (
     <Card key={id} className="border-zinc-700/60 bg-zinc-800 text-zinc-200">
       <CardHeader>
@@ -37,7 +35,7 @@ const MoreProjectCard: FC<MoreProjectsType> = ({
       <CardContent className={cn(noto_sans.className)}>
         <div className="flex w-full items-center justify-between text-sm text-muted-foreground">
           <div className="flex flex-wrap items-center gap-2">
-            {techStacks.map((element, index) => {
+            {techStacks.map((element: String, index: number) => {
               return (
                 <Badge
                   className="cursor-default rounded-sm border-zinc-700/60 bg-zinc-900 text-zinc-400 shadow-md hover:bg-zinc-800"

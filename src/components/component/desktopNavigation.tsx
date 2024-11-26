@@ -12,11 +12,16 @@ import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { navLinks } from "@/data/navLinks";
 
+interface NavLink {
+  name: string;
+  path: string;
+}
+
 const DesktopNavigation: FC = () => {
   return (
     <NavigationMenu className="hidden text-zinc-400 lg:block">
       <NavigationMenuList className="space-x-4">
-        {navLinks.map(({ name, path }, index) => {
+        {navLinks.map(({ name, path }: NavLink, index: number) => {
           return (
             <NavigationMenuItem key={index}>
               <NavigationMenuLink

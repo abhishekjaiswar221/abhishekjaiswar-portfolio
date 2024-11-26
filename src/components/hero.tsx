@@ -1,5 +1,3 @@
-"use client";
-
 import React, { FC } from "react";
 import Socials from "./component/socials";
 import ProfilePhoto from "./component/profilePhoto";

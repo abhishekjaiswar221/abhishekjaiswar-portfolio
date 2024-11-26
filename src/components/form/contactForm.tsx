@@ -1,5 +1,6 @@
 "use client";
 
+import React, { useState } from "react";
 import {
   Form,
   FormControl,
@@ -7,7 +8,6 @@ import {
   FormItem,
   FormMessage,
 } from "@/components/ui/form";
-import { useState } from "react";
 import { Input } from "@/components/ui/input";
 import { FormSchema } from "@/lib/formSchema";
 import { Button } from "@/components/ui/button";
@@ -25,7 +25,7 @@ interface ContactFormInputs {
 }
 
 const ContactForm: React.FC = () => {
-  let [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState<boolean>(false);
 
   const form = useForm<ContactFormInputs>({
     resolver: zodResolver(FormSchema),
@@ -37,10 +37,12 @@ const ContactForm: React.FC = () => {
     },
   });
 
-  const onSubmit: SubmitHandler<ContactFormInputs> = async (data) => {
+  const onSubmit: SubmitHandler<ContactFormInputs> = async (
+    data: ContactFormInputs
+  ) => {
     setLoading(true);
 
-    const formData = new FormData();
+    const formData: FormData = new FormData();
     formData.append(
       "access_key",
       `${process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY}`
@@ -50,7 +52,7 @@ const ContactForm: React.FC = () => {
     formData.append("email", data.email);
     formData.append("message", data.message);
 
-    const response = await fetch("https://api.web3forms.com/submit", {
+    const response: Response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -61,7 +63,7 @@ const ContactForm: React.FC = () => {
 
     setLoading(false);
 
-    const result = await response.json();
+    const result: { success: boolean } = await response.json();
     if (result.success) {
       form.reset();
       toast({
