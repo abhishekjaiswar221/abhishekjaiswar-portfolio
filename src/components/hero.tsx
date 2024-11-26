@@ -1,5 +1,3 @@
-"use client";
-
 import React, { FC } from "react";
 import Socials from "./component/socials";
 import ProfilePhoto from "./component/profilePhoto";
@@ -36,7 +34,10 @@ const Hero: FC = () => {
       </div>
       <div className="basis-1/3 space-y-4">
         <ProfilePhoto styles={"aspect-square w-full h-full rounded-xl"} />
-        <div>
+        <div className="flex items-center justify-center gap-5">
+          <span className="lg:hidden">
+            <ConnectDialog />
+          </span>
           <Socials styles={"text-zinc-400"} />
         </div>
       </div>

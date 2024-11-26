@@ -1,5 +1,3 @@
-"use client";
-
 import React, { FC } from "react";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
@@ -12,7 +10,7 @@ import MoreProjectCard from "@/components/Card/moreProjectCard";
 
 const andika = Andika({ subsets: ["latin"], weight: "400" });
 
-const Page: FC = () => {
+const Page: FC = (): JSX.Element => {
   return (
     <main
       id="experience"

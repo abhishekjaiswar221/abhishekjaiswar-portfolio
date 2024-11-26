@@ -1,14 +1,17 @@
 import React, { FC } from "react";
-import Hero from "@/components/hero";
 import { cn } from "@/lib/utils";
+import Hero from "@/components/hero";
 import Skills from "@/components/skills";
 import { Andika } from "next/font/google";
 import Projects from "@/components/projects";
 import BlurFade from "@/components/magicui/blur-fade";
 
-const andika = Andika({ subsets: ["latin"], weight: "400" });
+const andika: { className: string } = Andika({
+  subsets: ["latin"],
+  weight: "400",
+});
 
-const Home: FC = () => {
+const Home: FC = (): JSX.Element => {
   return (
     <main
       className={cn(
@@ -17,7 +20,7 @@ const Home: FC = () => {
       )}
     >
       <section id="hero">
-        <BlurFade delay={0.25} inView>
+        <BlurFade delay={0.25} inView={true}>
           <Hero />
         </BlurFade>
       </section>

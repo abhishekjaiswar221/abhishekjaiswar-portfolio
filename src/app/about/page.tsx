@@ -1,16 +1,14 @@
-"use client";
-
 import React, { FC } from "react";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
-import { Andika, Noto_Sans } from "next/font/google";
 import { ChevronLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Andika, Noto_Sans } from "next/font/google";
 
 const andika = Andika({ subsets: ["latin"], weight: "400" });
 const noto_sans = Noto_Sans({ subsets: ["latin"] });
 
-const Page: FC = () => {
+const Page: FC = (): JSX.Element => {
   return (
     <main
       id="about"
@@ -57,7 +55,7 @@ const Page: FC = () => {
 
         <p className="mt-6 text-balance text-justify leading-7 text-zinc-400">
           As a skilled web developer, I possess a strong foundation in modern
-          technologies like React, Next.js, Shadcn UI and Tailwind CSS. My
+          technologies like React, Next.js, Shadcn UI, and Tailwind CSS. My
           expertise lies in crafting visually appealing, accessible, and
           high-performance websites that deliver exceptional user experiences. I
           am dedicated to staying up-to-date with the latest industry trends and

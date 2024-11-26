@@ -1,7 +1,7 @@
-import React from "react";
-import type { Metadata } from "next";
+import React, { FC, ReactNode } from "react";
 import "@/styles/globals.css";
 import { cn } from "@/lib/utils";
+import type { Metadata } from "next";
 import { Noto_Sans } from "next/font/google";
 import NextTopLoader from "nextjs-toploader";
 import { Toaster } from "@/components/ui/toaster";
@@ -18,10 +18,10 @@ export const metadata: Metadata = {
 };
 
 interface RootLayoutProps {
-  children: React.ReactNode;
+  children: ReactNode;
 }
 
-export default function RootLayout({ children }: Readonly<RootLayoutProps>) {
+const RootLayout: FC<Readonly<RootLayoutProps>> = ({ children }) => {
   return (
     <html lang="en" suppressHydrationWarning>
       <head />
@@ -53,4 +53,6 @@ export default function RootLayout({ children }: Readonly<RootLayoutProps>) {
       </body>
     </html>
   );
-}
+};
+
+export default RootLayout;

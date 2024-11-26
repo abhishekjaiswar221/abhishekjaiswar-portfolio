@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { FC } from "react";
 import {
   Dialog,
   DialogContent,
@@ -9,17 +9,29 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 import { Button } from "../ui/button";
+import { UserRound } from "lucide-react";
 import ContactForm from "../form/contactForm";
 import { DialogDescription } from "@radix-ui/react-dialog";
 import { VisuallyHidden } from "@radix-ui/react-visually-hidden";
 
-const ConnectDialog = () => {
+const ConnectDialog: FC = () => {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <Button className="rounded-lg border-2 border-indigo-500 bg-indigo-500 text-zinc-200 hover:bg-transparent">
-          Connect
-        </Button>
+        <div className="hidden lg:block">
+          <Button className="rounded-lg border-2 border-indigo-500 bg-indigo-500 text-zinc-200 hover:bg-transparent">
+            Connect
+          </Button>
+        </div>
+      </DialogTrigger>
+      <DialogTrigger asChild>
+        <div className="lg:hidden">
+          <UserRound
+            className="box-content cursor-pointer rounded-lg p-1 text-zinc-400 hover:bg-zinc-800 hover:text-indigo-400"
+            size={20}
+            strokeWidth={1.5}
+          />
+        </div>
       </DialogTrigger>
       <DialogContent className="w-80 rounded-lg md:w-96">
         <DialogHeader>

@@ -6,15 +6,10 @@ import {
   Linkedin,
   SquareTerminal,
   Twitter,
-  UserRound,
 } from "lucide-react";
-import {
-  DesktopNavLinksType,
-  MobileNavLinksType,
-  MobileSocialNavLinksType,
-} from "./dataTypes";
+import { NavLinksType, MobileSocialNavLinksType } from "./dataTypes";
 
-export const mobileNavLinks: Array<MobileNavLinksType> = [
+export const navLinks: Array<NavLinksType> = [
   { path: "/", name: "Home", icon: <Home size={22} strokeWidth={1.5} /> },
   {
     path: "/about",
@@ -31,18 +26,6 @@ export const mobileNavLinks: Array<MobileNavLinksType> = [
     name: "More Projects",
     icon: <CodeXml size={22} strokeWidth={1.5} />,
   },
-  {
-    path: "/connect",
-    name: "Connect",
-    icon: <UserRound size={22} strokeWidth={1.5} />,
-  },
-];
-
-export const desktopNavLinks: Array<DesktopNavLinksType> = [
-  { path: "/", name: "Home" },
-  { path: "/about", name: "About" },
-  { path: "/#skills", name: "Skills" },
-  { path: "/projects", name: "More Projects" },
 ];
 
 export const mobileSocialNavLinks: Array<MobileSocialNavLinksType> = [

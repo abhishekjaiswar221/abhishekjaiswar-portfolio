@@ -1,6 +1,6 @@
 "use client";
 
-import { z } from "zod";
+import React, { useState } from "react";
 import {
   Form,
   FormControl,
@@ -8,53 +8,72 @@ import {
   FormItem,
   FormMessage,
 } from "@/components/ui/form";
-import { useForm } from "react-hook-form";
 import { Input } from "@/components/ui/input";
+import { FormSchema } from "@/lib/formSchema";
 import { Button } from "@/components/ui/button";
+import ClipLoader from "react-spinners/ClipLoader";
 import { Textarea } from "@/components/ui/textarea";
 import { toast } from "@/components/hooks/use-toast";
 import { zodResolver } from "@hookform/resolvers/zod";
+import { useForm, SubmitHandler } from "react-hook-form";
 
-const FormSchema = z.object({
-  name: z
-    .string()
-    .min(1, {
-      message: "Required Field",
-    })
-    .min(3, {
-      message: "Name must be at least 3 characters",
-    }),
-  email: z
-    .string()
-    .min(1, { message: "Required Field" })
-    .email("This is not a valid email"),
-  message: z
-    .string()
-    .min(1, {
-      message: "Required Field",
-    })
-    .min(10, {
-      message: "Message must be minimum 10 characters",
-    })
-    .max(160, {
-      message: "Message must not be longer than 30 characters",
-    }),
-});
+interface ContactFormInputs {
+  subject: string;
+  name: string;
+  email: string;
+  message: string;
+}
 
-const ContactForm = () => {
-  const form = useForm<z.infer<typeof FormSchema>>({
+const ContactForm: React.FC = () => {
+  const [loading, setLoading] = useState<boolean>(false);
+
+  const form = useForm<ContactFormInputs>({
     resolver: zodResolver(FormSchema),
     defaultValues: {
+      subject: "You've got a new message",
       name: "",
       email: "",
       message: "",
     },
   });
 
-  const onSubmit = () => {
-    toast({
-      description: "Your form has been submitted",
+  const onSubmit: SubmitHandler<ContactFormInputs> = async (
+    data: ContactFormInputs
+  ) => {
+    setLoading(true);
+
+    const formData: FormData = new FormData();
+    formData.append(
+      "access_key",
+      `${process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY}`
+    );
+    formData.append("subject", data.subject);
+    formData.append("name", data.name);
+    formData.append("email", data.email);
+    formData.append("message", data.message);
+
+    const response: Response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: JSON.stringify(Object.fromEntries(formData)),
     });
+
+    setLoading(false);
+
+    const result: { success: boolean } = await response.json();
+    if (result.success) {
+      form.reset();
+      toast({
+        description: `Thank you, ${data.name}! Your message has been sent.`,
+      });
+    } else {
+      toast({
+        description: "Error submitting the form!",
+      });
+    }
   };
 
   return (
@@ -110,9 +129,20 @@ const ContactForm = () => {
         />
         <Button
           type="submit"
+          disabled={loading}
           className="w-full rounded-lg border-2 border-indigo-500 bg-indigo-500 text-zinc-200 hover:bg-transparent"
         >
-          Submit
+          {loading ? (
+            <ClipLoader
+              color={"#ffffff"}
+              loading={loading}
+              size={20}
+              aria-label="Loading Spinner"
+              data-testid="loader"
+            />
+          ) : (
+            "Submit"
+          )}
         </Button>
       </form>
     </Form>

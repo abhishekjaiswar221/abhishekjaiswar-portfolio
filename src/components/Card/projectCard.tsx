@@ -1,5 +1,3 @@
-"use client";
-
 import { FC } from "react";
 import Link from "next/link";
 import Image from "next/image";
@@ -17,7 +15,7 @@ const ProjectCard: FC<ProjectsType> = ({
   techStacks,
   live,
   github,
-}) => {
+}: ProjectsType) => {
   return (
     <div className={cn(noto_sans.className)}>
       <Link key={id} target="_blank" href={live || github || "/"}>

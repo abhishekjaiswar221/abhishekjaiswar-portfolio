@@ -11,7 +11,10 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const noto_sans = Noto_Sans({ subsets: ["latin"] });
 
-const TechCard: FC<TechCardProps> = ({ iterableArray, cardTitle }) => {
+const TechCard: FC<TechCardProps> = ({
+  iterableArray,
+  cardTitle,
+}: TechCardProps) => {
   return (
     <Card className="rounded-lg border-zinc-700/60 bg-zinc-800 shadow-xl">
       <CardHeader className="p-4">
