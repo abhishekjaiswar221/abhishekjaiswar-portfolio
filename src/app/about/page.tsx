@@ -3,10 +3,7 @@ import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { ChevronLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Andika, Noto_Sans } from "next/font/google";
-
-const andika = Andika({ subsets: ["latin"], weight: "400" });
-const noto_sans = Noto_Sans({ subsets: ["latin"] });
+import { andika, noto_sans } from "@/lib/fonts";
 
 const Page: FC = (): JSX.Element => {
   return (

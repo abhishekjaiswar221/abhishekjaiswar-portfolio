@@ -2,10 +2,8 @@ import { FC } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
-import { Noto_Sans } from "next/font/google";
+import { noto_sans } from "@/lib/fonts";
 import { ProjectsType } from "@/data/dataTypes";
-
-const noto_sans = Noto_Sans({ subsets: ["latin"] });
 
 const ProjectCard: FC<ProjectsType> = ({
   id,
