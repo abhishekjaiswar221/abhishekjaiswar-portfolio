@@ -26,6 +26,7 @@ const ProjectCard: FC<ProjectsType> = ({
             width={700}
             height={700}
             alt={altText}
+            priority
           />
           <div className="flex flex-col border-t border-zinc-200 p-4">
             <div className="flex font-semibold">{title}</div>
