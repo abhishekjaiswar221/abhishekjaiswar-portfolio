@@ -1,5 +1,6 @@
 import React, { FC } from "react";
 import Link from "next/link";
+import { Metadata } from "next";
 import { cn } from "@/lib/utils";
 import { Andika } from "next/font/google";
 import { ChevronLeft } from "lucide-react";
@@ -7,6 +8,16 @@ import { Button } from "@/components/ui/button";
 import { moreProjects } from "@/data/moreProjects";
 import { MoreProjectsType } from "@/data/dataTypes";
 import MoreProjectCard from "@/components/Card/moreProjectCard";
+
+export const metadata: Metadata = {
+  title: "More Projects",
+  description: "Personal Portfolio Website",
+
+  // Alternates
+  alternates: {
+    canonical: "https://abhishekjaiswar.pages.dev/projects",
+  },
+};
 
 const andika = Andika({ subsets: ["latin"], weight: "400" });
 
