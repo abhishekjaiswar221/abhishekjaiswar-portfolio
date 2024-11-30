@@ -17,7 +17,7 @@ const NotFound: FC = () => {
     <main
       className={cn(
         andika.className,
-        "flex min-h-[40rem] flex-col items-center justify-center bg-zinc-900"
+        "flex min-h-screen flex-col items-center justify-center bg-zinc-900"
       )}
     >
       <div className="bg-grid-gray-200/50 dark:bg-grid-gray-800/50 absolute inset-0 bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]"></div>
