@@ -39,9 +39,9 @@ const Page: FC = (): JSX.Element => {
             <span>Go back</span>
           </Link>
         </Button>
-        <h3 className="mt-5 scroll-m-20 text-xl font-semibold tracking-tight md:text-2xl lg:text-3xl">
+        <h1 className="mt-5 scroll-m-20 text-xl font-semibold tracking-tight md:text-2xl lg:text-3xl">
           About Me
-        </h3>
+        </h1>
         <p
           className={cn(
             noto_sans.className,

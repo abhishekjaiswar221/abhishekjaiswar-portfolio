@@ -11,9 +11,9 @@ const Projects: FC = () => {
   return (
     <section className="flex w-full flex-col gap-10">
       <div>
-        <h3 className="scroll-m-20 text-center text-xl font-semibold tracking-tight md:text-2xl lg:text-3xl">
+        <h1 className="scroll-m-20 text-center text-xl font-semibold tracking-tight md:text-2xl lg:text-3xl">
           Projects
-        </h3>
+        </h1>
       </div>
       <div className="flex flex-col items-center justify-center gap-8 md:grid md:grid-cols-2 md:gap-5 lg:grid-cols-3">
         {projects.map(
