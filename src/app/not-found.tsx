@@ -3,14 +3,9 @@
 import { FC } from "react";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
+import { andika } from "@/lib/fonts";
 import { motion } from "framer-motion";
-import { Andika } from "next/font/google";
 import { Button } from "@/components/ui/button";
-
-const andika: { className: string } = Andika({
-  subsets: ["latin"],
-  weight: "400",
-});
 
 const NotFound: FC = () => {
   return (

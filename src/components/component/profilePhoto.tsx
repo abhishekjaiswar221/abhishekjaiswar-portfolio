@@ -10,7 +10,7 @@ interface ProfilePhotoProps {
 const ProfilePhoto: FC<ProfilePhotoProps> = ({ styles }) => {
   return (
     <Avatar className={`${styles}`}>
-      <AvatarImage src="/images/profile-picture.png" alt="Profile Photo" />
+      <AvatarImage src="/images/profile-picture.webp" alt="Profile Photo" />
       <AvatarFallback className="text-sm text-zinc-900">AJ</AvatarFallback>
     </Avatar>
   );

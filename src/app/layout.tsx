@@ -1,12 +1,14 @@
 import React, { FC, ReactNode } from "react";
 import "@/styles/globals.css";
 import { cn } from "@/lib/utils";
-import { Noto_Sans } from "next/font/google";
+import { noto_sans } from "@/lib/fonts";
 import NextTopLoader from "nextjs-toploader";
 import type { Metadata, Viewport } from "next";
 import { Toaster } from "@/components/ui/toaster";
 import HeaderNavigation from "@/components/navigation/headerNavigation";
 import FooterNavigation from "@/components/navigation/footerNavigation";
+
+export const runtime = "edge";
 
 export const viewport: Viewport = {
   width: "device-width",
@@ -111,10 +113,6 @@ export const metadata: Metadata = {
   // Category
   category: "technology",
 };
-
-const noto_sans = Noto_Sans({ subsets: ["latin"] });
-
-export const runtime = "edge";
 
 interface RootLayoutProps {
   children: ReactNode;

@@ -4,7 +4,7 @@ import { cn } from "@/lib/utils";
 import { Metadata } from "next";
 import { ChevronLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Andika, Noto_Sans } from "next/font/google";
+import { andika, noto_sans } from "@/lib/fonts";
 
 export const metadata: Metadata = {
   title: "About",
@@ -15,9 +15,6 @@ export const metadata: Metadata = {
     canonical: "https://abhishekjaiswar.pages.dev/about",
   },
 };
-
-const andika = Andika({ subsets: ["latin"], weight: "400" });
-const noto_sans = Noto_Sans({ subsets: ["latin"] });
 
 const Page: FC = (): JSX.Element => {
   return (
