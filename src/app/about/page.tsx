@@ -1,9 +1,20 @@
 import React, { FC } from "react";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
+import { Metadata } from "next";
 import { ChevronLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { andika, noto_sans } from "@/lib/fonts";
+
+export const metadata: Metadata = {
+  title: "About",
+  description: "Personal Portfolio Website",
+
+  // Alternates
+  alternates: {
+    canonical: "https://abhishekjaiswar.pages.dev/about",
+  },
+};
 
 const Page: FC = (): JSX.Element => {
   return (

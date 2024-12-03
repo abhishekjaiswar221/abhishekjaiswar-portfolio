@@ -67,4 +67,5 @@ const NotFound: FC = () => {
     </main>
   );
 };
+
 export default NotFound;
