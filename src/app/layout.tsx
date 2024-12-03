@@ -5,6 +5,8 @@ import { noto_sans } from "@/lib/fonts";
 import NextTopLoader from "nextjs-toploader";
 import type { Metadata, Viewport } from "next";
 import { Toaster } from "@/components/ui/toaster";
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import HeaderNavigation from "@/components/navigation/headerNavigation";
 import FooterNavigation from "@/components/navigation/footerNavigation";
 
@@ -145,6 +147,8 @@ const RootLayout: FC<Readonly<RootLayoutProps>> = ({ children }) => {
         />
         <HeaderNavigation />
         {children}
+        <Analytics />
+        <SpeedInsights />
         <Toaster />
         <FooterNavigation />
       </body>
