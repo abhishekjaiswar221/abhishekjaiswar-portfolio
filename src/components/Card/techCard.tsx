@@ -4,12 +4,10 @@ import { FC } from "react";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
 import { Button } from "../ui/button";
-import { Noto_Sans } from "next/font/google";
+import { noto_sans } from "@/lib/fonts";
 import { TechIconsType } from "@/data/dataTypes";
 import { TechCardProps } from "@/data/dataTypes";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-
-const noto_sans = Noto_Sans({ subsets: ["latin"] });
 
 const TechCard: FC<TechCardProps> = ({
   iterableArray,

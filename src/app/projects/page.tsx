@@ -2,7 +2,7 @@ import React, { FC } from "react";
 import Link from "next/link";
 import { Metadata } from "next";
 import { cn } from "@/lib/utils";
-import { Andika } from "next/font/google";
+import { andika } from "@/lib/fonts";
 import { ChevronLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { moreProjects } from "@/data/moreProjects";
@@ -18,8 +18,6 @@ export const metadata: Metadata = {
     canonical: "https://abhishekjaiswar.pages.dev/projects",
   },
 };
-
-const andika = Andika({ subsets: ["latin"], weight: "400" });
 
 const Page: FC = (): JSX.Element => {
   return (

@@ -1,15 +1,10 @@
 import React, { FC } from "react";
 import { cn } from "@/lib/utils";
 import Hero from "@/components/hero";
+import { andika } from "@/lib/fonts";
 import Skills from "@/components/skills";
-import { Andika } from "next/font/google";
 import Projects from "@/components/projects";
 import BlurFade from "@/components/magicui/blur-fade";
-
-const andika: { className: string } = Andika({
-  subsets: ["latin"],
-  weight: "400",
-});
 
 const Home: FC = (): JSX.Element => {
   return (

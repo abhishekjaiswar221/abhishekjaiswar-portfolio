@@ -10,11 +10,9 @@ import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { Badge } from "../ui/badge";
 import { Button } from "../ui/button";
-import { Noto_Sans } from "next/font/google";
+import { noto_sans } from "@/lib/fonts";
 import { MoreProjectsType } from "@/data/dataTypes";
 import { Github, SquareArrowOutUpRight } from "lucide-react";
-
-const noto_sans = Noto_Sans({ subsets: ["latin"] });
 
 const MoreProjectCard: FC<MoreProjectsType> = ({
   id,

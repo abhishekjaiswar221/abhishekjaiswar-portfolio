@@ -40,7 +40,7 @@ export const frontendTechIcons: Array<TechIconsType> = [
   {
     id: 7,
     title: "Magic UI",
-    imgSrc: "magicui.png",
+    imgSrc: "magicui.webp",
     altText: "Magic UI Logo",
   },
   // {
