@@ -50,7 +50,7 @@ const NotFound: FC = () => {
           <Button
             asChild
             size="lg"
-            className="rounded-lg border-2 border-indigo-500 bg-indigo-500 text-zinc-200 hover:bg-transparent"
+            className="rounded-lg border-2 border-indigo-600 bg-indigo-600 text-zinc-200 hover:bg-transparent"
           >
             <Link href="/" className="text-base">
               Go back home

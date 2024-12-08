@@ -14,6 +14,7 @@ export interface MobileSocialNavLinksType {
 
 export interface SocialIconsType {
   path: string;
+  label: string;
   icon: React.ReactNode;
 }
 

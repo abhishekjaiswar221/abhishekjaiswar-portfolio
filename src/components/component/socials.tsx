@@ -20,6 +20,7 @@ const Socials: FC<SocialsProps> = ({ styles }) => {
           strokeWidth={1.5}
         />
       ),
+      label: "Visit my github profile",
     },
     {
       path: "https://linkedin.com/in/abhishekjai221",
@@ -30,6 +31,7 @@ const Socials: FC<SocialsProps> = ({ styles }) => {
           strokeWidth={1.5}
         />
       ),
+      label: "Visit my linkedin profile",
     },
     {
       path: "https://x.com/abhishekjai221",
@@ -40,18 +42,21 @@ const Socials: FC<SocialsProps> = ({ styles }) => {
           strokeWidth={1.5}
         />
       ),
+      label: "Visit my twitter profile",
     },
   ];
 
   return (
     <div className="flex items-center justify-center gap-5">
-      {socialIcons.map(({ path, icon }: SocialIconsType, index: number) => {
-        return (
-          <Link key={index} href={path} target="_blank">
-            {icon}
-          </Link>
-        );
-      })}
+      {socialIcons.map(
+        ({ path, icon, label }: SocialIconsType, index: number) => {
+          return (
+            <Link key={index} href={path} target="_blank" aria-label={label}>
+              {icon}
+            </Link>
+          );
+        }
+      )}
     </div>
   );
 };

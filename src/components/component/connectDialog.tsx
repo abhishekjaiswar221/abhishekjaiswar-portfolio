@@ -18,14 +18,24 @@ const ConnectDialog: FC = () => {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <div className="hidden lg:block">
-          <Button className="rounded-lg border-2 border-indigo-500 bg-indigo-500 text-zinc-200 hover:bg-transparent">
+        <div
+          className="hidden lg:block"
+          role="button"
+          aria-label="Open connect dialog"
+          tabIndex={0}
+        >
+          <Button className="rounded-lg border-2 border-indigo-600 bg-indigo-600 text-zinc-200 hover:bg-transparent">
             Connect
           </Button>
         </div>
       </DialogTrigger>
       <DialogTrigger asChild>
-        <div className="lg:hidden">
+        <div
+          className="lg:hidden"
+          role="button"
+          aria-label="Open connect dialog"
+          tabIndex={0}
+        >
           <UserRound
             className="box-content cursor-pointer rounded-lg p-1 text-zinc-400 hover:bg-zinc-800 hover:text-indigo-400"
             size={20}
