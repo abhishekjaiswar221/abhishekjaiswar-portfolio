@@ -24,7 +24,6 @@ const MobileNavigation: FC = () => {
           className="lg:hidden"
           role="button"
           aria-label="Open main menu"
-          tabIndex={0}
         >
           <Menu size={22} strokeWidth={1.5} />
         </div>
