@@ -20,12 +20,7 @@ const MobileNavigation: FC = () => {
   return (
     <Sheet>
       <SheetTrigger asChild className="flex w-full items-center justify-end">
-        <div
-          className="lg:hidden"
-          role="button"
-          aria-label="Open main menu"
-          tabIndex={0}
-        >
+        <div className="lg:hidden" role="button" aria-label="Open main menu">
           <Menu size={22} strokeWidth={1.5} />
         </div>
       </SheetTrigger>
