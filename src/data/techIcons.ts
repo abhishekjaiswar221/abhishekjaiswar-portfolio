@@ -198,9 +198,9 @@ export const othersTechIcons: Array<TechIconsType> = [
   },
   {
     id: 4,
-    title: "Rollup Js",
+    title: "Rollup JS",
     imgSrc: "rollup.svg",
-    altText: "Rollup Js Logo",
+    altText: "Rollup JS Logo",
   },
   {
     id: 5,
