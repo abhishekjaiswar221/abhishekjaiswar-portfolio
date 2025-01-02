@@ -11,9 +11,9 @@ import {
 } from "@/components/ui/sheet";
 import Link from "next/link";
 import { Menu } from "lucide-react";
-import { navLinks } from "@/data/navLinks";
-import { NavLinksType } from "@/data/dataTypes";
-import { mobileSocialNavLinks } from "@/data/navLinks";
+import { navLinks } from "@/data/nav-links";
+import { NavLinksType } from "@/data/data-types";
+import { mobileSocialNavLinks } from "@/data/nav-links";
 import { VisuallyHidden } from "@radix-ui/react-visually-hidden";
 
 const MobileNavigation: FC = () => {

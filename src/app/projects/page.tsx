@@ -5,9 +5,9 @@ import { cn } from "@/lib/utils";
 import { andika } from "@/lib/fonts";
 import { ChevronLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { moreProjects } from "@/data/moreProjects";
-import { MoreProjectsType } from "@/data/dataTypes";
-import MoreProjectCard from "@/components/Card/moreProjectCard";
+import { moreProjects } from "@/data/more-projects";
+import { MoreProjectsType } from "@/data/data-types";
+import MoreProjectCard from "@/components/card/more-project-card";
 
 export const metadata: Metadata = {
   title: "More Projects",

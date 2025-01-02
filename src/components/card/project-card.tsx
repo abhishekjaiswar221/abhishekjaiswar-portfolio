@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
 import { noto_sans } from "@/lib/fonts";
-import { ProjectsType } from "@/data/dataTypes";
+import { ProjectsType } from "@/data/data-types";
 
 const ProjectCard: FC<ProjectsType> = ({
   id,

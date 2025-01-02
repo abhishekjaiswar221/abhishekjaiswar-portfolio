@@ -9,7 +9,7 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
-import { FormSchema } from "@/lib/formSchema";
+import { FormSchema } from "@/lib/form-schema";
 import { Button } from "@/components/ui/button";
 import ClipLoader from "react-spinners/ClipLoader";
 import { Textarea } from "@/components/ui/textarea";

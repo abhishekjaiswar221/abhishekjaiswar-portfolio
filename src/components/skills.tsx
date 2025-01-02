@@ -4,8 +4,8 @@ import {
   backend_devopsTechIcons,
   devtoolsTechIcons,
   othersTechIcons,
-} from "@/data/techIcons";
-import TechCard from "@/components/Card/techCard";
+} from "@/data/tech-icons";
+import TechCard from "@/components/card/tech-card";
 
 const Skills: FC = () => {
   return (

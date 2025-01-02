@@ -1,9 +1,9 @@
 import React, { FC } from "react";
 import Link from "next/link";
 import BlurIn from "../magicui/blur-in";
-import ProfilePhoto from "../component/profilePhoto";
-import DesktopNavigation from "../component/desktopNavigation";
-import MobileNavigation from "../component/mobileNavigation";
+import ProfilePhoto from "../component/profile-photo";
+import MobileNavigation from "../component/mobile-navigation";
+import DesktopNavigation from "../component/desktop-navigation";
 
 const HeaderNavigation: FC = () => {
   return (

@@ -7,8 +7,8 @@ import type { Metadata, Viewport } from "next";
 import { Toaster } from "@/components/ui/toaster";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
-import HeaderNavigation from "@/components/navigation/headerNavigation";
-import FooterNavigation from "@/components/navigation/footerNavigation";
+import HeaderNavigation from "@/components/navigation/header-navigation";
+import FooterNavigation from "@/components/navigation/footer-navigation";
 
 export const runtime = "edge";
 

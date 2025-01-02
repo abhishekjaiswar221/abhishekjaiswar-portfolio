@@ -1,4 +1,4 @@
-import { TechIconsType } from "./dataTypes";
+import { TechIconsType } from "./data-types";
 
 export const frontendTechIcons: Array<TechIconsType> = [
   {

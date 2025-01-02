@@ -1,4 +1,4 @@
-import { ProjectsType } from "./dataTypes";
+import { ProjectsType } from "./data-types";
 
 export const projects: Array<ProjectsType> = [
   {

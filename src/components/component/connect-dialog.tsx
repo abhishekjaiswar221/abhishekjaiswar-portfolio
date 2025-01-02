@@ -10,7 +10,7 @@ import {
 } from "@/components/ui/dialog";
 import { Button } from "../ui/button";
 import { UserRound } from "lucide-react";
-import ContactForm from "../form/contactForm";
+import ContactForm from "../form/contact-form";
 import { DialogDescription } from "@radix-ui/react-dialog";
 import { VisuallyHidden } from "@radix-ui/react-visually-hidden";
 

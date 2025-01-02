@@ -5,8 +5,8 @@ import Image from "next/image";
 import { cn } from "@/lib/utils";
 import { Button } from "../ui/button";
 import { noto_sans } from "@/lib/fonts";
-import { TechIconsType } from "@/data/dataTypes";
-import { TechCardProps } from "@/data/dataTypes";
+import { TechIconsType } from "@/data/data-types";
+import { TechCardProps } from "@/data/data-types";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const TechCard: FC<TechCardProps> = ({

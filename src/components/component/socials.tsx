@@ -3,7 +3,7 @@
 import React, { FC } from "react";
 import Link from "next/link";
 import { Github, Linkedin, Twitter } from "lucide-react";
-import { SocialIconsType } from "@/data/dataTypes";
+import { SocialIconsType } from "@/data/data-types";
 
 interface SocialsProps {
   styles?: string;

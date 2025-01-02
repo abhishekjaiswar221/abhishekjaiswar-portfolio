@@ -4,8 +4,8 @@ import { FC } from "react";
 import Link from "next/link";
 import { Button } from "./ui/button";
 import { projects } from "@/data/projects";
-import ProjectCard from "./Card/projectCard";
-import { ProjectsType } from "@/data/dataTypes";
+import ProjectCard from "./card/project-card";
+import { ProjectsType } from "@/data/data-types";
 
 const Projects: FC = () => {
   return (

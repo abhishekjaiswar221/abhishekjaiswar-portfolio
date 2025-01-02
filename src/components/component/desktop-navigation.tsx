@@ -10,7 +10,7 @@ import {
 } from "@/components/ui/navigation-menu";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
-import { navLinks } from "@/data/navLinks";
+import { navLinks } from "@/data/nav-links";
 
 interface NavLink {
   name: string;

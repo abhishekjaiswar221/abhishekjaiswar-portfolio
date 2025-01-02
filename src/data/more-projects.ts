@@ -1,4 +1,4 @@
-import { MoreProjectsType } from "./dataTypes";
+import { MoreProjectsType } from "./data-types";
 
 export const moreProjects: Array<MoreProjectsType> = [
   {

@@ -11,7 +11,7 @@ import { cn } from "@/lib/utils";
 import { Badge } from "../ui/badge";
 import { Button } from "../ui/button";
 import { noto_sans } from "@/lib/fonts";
-import { MoreProjectsType } from "@/data/dataTypes";
+import { MoreProjectsType } from "@/data/data-types";
 import { Github, SquareArrowOutUpRight } from "lucide-react";
 
 const MoreProjectCard: FC<MoreProjectsType> = ({

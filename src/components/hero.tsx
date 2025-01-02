@@ -1,8 +1,8 @@
 import React, { FC } from "react";
 import Socials from "./component/socials";
-import ProfilePhoto from "./component/profilePhoto";
 import HyperText from "./magicui/hyper-text";
-import ConnectDialog from "./component/connectDialog";
+import ProfilePhoto from "./component/profile-photo";
+import ConnectDialog from "./component/connect-dialog";
 
 const Hero: FC = () => {
   return (

@@ -7,7 +7,7 @@ import {
   SquareTerminal,
   Twitter,
 } from "lucide-react";
-import { NavLinksType, MobileSocialNavLinksType } from "./dataTypes";
+import { NavLinksType, MobileSocialNavLinksType } from "./data-types";
 
 export const navLinks: Array<NavLinksType> = [
   { path: "/", name: "Home", icon: <Home size={22} strokeWidth={1.5} /> },
