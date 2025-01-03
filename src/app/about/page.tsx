@@ -29,7 +29,7 @@ const Page: FC = (): JSX.Element => {
         <Button
           asChild
           variant="default"
-          className="bg-transparent px-0 shadow-none hover:bg-zinc-900 hover:text-indigo-400"
+          className="bg-transparent px-0 shadow-none hover:bg-zinc-950 hover:text-indigo-400"
         >
           <Link href="/">
             <ChevronLeft size={20} strokeWidth={1.5} />
@@ -49,7 +49,12 @@ const Page: FC = (): JSX.Element => {
         </p>
       </div>
       <div className="mt-8">
-        <p className="text-justify leading-7 text-zinc-400">
+        <p
+          className={cn(
+            noto_sans.className,
+            "text-justify leading-7 text-zinc-400"
+          )}
+        >
           I am a Full Stack Web Developer with a strong emphasis on Frontend
           Development based in Mumbai, India. With a Bachelor&apos;s degree in
           Information Technology from Guru Nanak College of Arts, Science, and
@@ -61,7 +66,12 @@ const Page: FC = (): JSX.Element => {
           enabling me to create innovative and user-centric web applications.
         </p>
 
-        <p className="mt-6 text-balance text-justify leading-7 text-zinc-400">
+        <p
+          className={cn(
+            noto_sans.className,
+            "mt-6 text-balance text-justify leading-7 text-zinc-400"
+          )}
+        >
           As a skilled web developer, I possess a strong foundation in modern
           technologies like React, Next.js, Shadcn UI, and Tailwind CSS. My
           expertise lies in crafting visually appealing, accessible, and

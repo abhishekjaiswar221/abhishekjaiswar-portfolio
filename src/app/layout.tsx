@@ -126,12 +126,12 @@ const RootLayout: FC<Readonly<RootLayoutProps>> = ({ children }) => {
       <head />
       <body
         className={cn(
-          "min-h-screen bg-zinc-900 text-zinc-200 antialiased",
+          "min-h-screen bg-zinc-950 text-zinc-100 antialiased",
           noto_sans.className
         )}
       >
         <NextTopLoader
-          color="#6366f1"
+          color="#4f46e5"
           initialPosition={0.08}
           crawlSpeed={200}
           height={2}
@@ -147,9 +147,9 @@ const RootLayout: FC<Readonly<RootLayoutProps>> = ({ children }) => {
         />
         <HeaderNavigation />
         {children}
+        <Toaster />
         <Analytics />
         <SpeedInsights />
-        <Toaster />
         <FooterNavigation />
       </body>
     </html>

@@ -23,7 +23,7 @@ const ConnectDialog: FC = () => {
           role="button"
           aria-label="Open connect dialog"
         >
-          <Button className="rounded-lg border-2 border-indigo-600 bg-indigo-600 text-zinc-200 hover:bg-transparent">
+          <Button className="rounded-lg border-2 border-indigo-600 bg-indigo-600 text-zinc-100 hover:bg-transparent">
             Connect
           </Button>
         </div>

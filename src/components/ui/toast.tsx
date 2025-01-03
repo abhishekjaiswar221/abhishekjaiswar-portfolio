@@ -29,7 +29,7 @@ const toastVariants = cva(
   {
     variants: {
       variant: {
-        default: "border border-zinc-700/60 bg-zinc-800 text-zinc-200",
+        default: "border border-zinc-700/60 bg-zinc-800 text-zinc-100",
         destructive:
           "destructive group border-destructive bg-destructive text-destructive-foreground",
       },
@@ -83,7 +83,7 @@ const ToastClose = React.forwardRef<
     toast-close=""
     {...props}
   >
-    <Cross2Icon className="h-4 w-4 text-zinc-200" />
+    <Cross2Icon className="h-4 w-4 text-zinc-100" />
   </ToastPrimitives.Close>
 ));
 ToastClose.displayName = ToastPrimitives.Close.displayName;

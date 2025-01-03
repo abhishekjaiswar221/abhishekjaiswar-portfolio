@@ -11,11 +11,11 @@ const Hero: FC = () => {
         <div className="md:space-y-2">
           <h1 className="scroll-m-20 text-balance text-3xl font-extrabold tracking-tight lg:text-4xl xl:text-5xl">
             Hola 👋🏼, I&apos;m{" "}
-            <span className="text-indigo-500">Abhishek Jaiswar</span>
+            <span className="text-indigo-600">Abhishek Jaiswar</span>
           </h1>
           <h1 className="flex scroll-m-20 items-center justify-start text-xl font-extrabold tracking-tight text-zinc-400 md:text-2xl lg:text-3xl xl:text-4xl">
             <div className="w-[108px] md:w-32 lg:w-40 xl:w-48">
-              <HyperText className="text-indigo-500" text="Frontend" />
+              <HyperText className="text-indigo-600" text="Frontend" />
             </div>
             Web Developer
           </h1>
