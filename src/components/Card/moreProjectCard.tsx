@@ -23,7 +23,7 @@ const MoreProjectCard: FC<MoreProjectsType> = ({
   live,
 }: MoreProjectsType) => {
   return (
-    <Card key={id} className="border-zinc-700/60 bg-zinc-800 text-zinc-200">
+    <Card key={id} className="border-zinc-700/60 bg-zinc-800 text-zinc-100">
       <CardHeader>
         <CardTitle>{title}</CardTitle>
         <CardDescription className={cn(noto_sans.className)}>

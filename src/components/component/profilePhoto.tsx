@@ -11,7 +11,7 @@ const ProfilePhoto: FC<ProfilePhotoProps> = ({ styles }) => {
   return (
     <Avatar className={`${styles}`}>
       <AvatarImage src="/images/profile-picture.webp" alt="Profile Photo" />
-      <AvatarFallback className="text-sm text-zinc-900">AJ</AvatarFallback>
+      <AvatarFallback className="text-sm text-black">AJ</AvatarFallback>
     </Avatar>
   );
 };

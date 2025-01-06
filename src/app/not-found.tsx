@@ -12,10 +12,9 @@ const NotFound: FC = () => {
     <main
       className={cn(
         andika.className,
-        "flex min-h-screen flex-col items-center justify-center bg-zinc-900"
+        "flex min-h-screen flex-col items-center justify-center"
       )}
     >
-      <div className="bg-grid-gray-200/50 dark:bg-grid-gray-800/50 absolute inset-0 bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]"></div>
       <div className="relative space-y-6 px-4 text-center">
         <motion.h1
           className="text-6xl font-bold text-zinc-100"
@@ -26,7 +25,7 @@ const NotFound: FC = () => {
           404
         </motion.h1>
         <motion.h2
-          className="text-3xl font-semibold text-zinc-200"
+          className="text-3xl font-semibold text-zinc-100"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
@@ -34,7 +33,7 @@ const NotFound: FC = () => {
           Page Not Found
         </motion.h2>
         <motion.p
-          className="mx-auto max-w-md text-xl text-zinc-300"
+          className="mx-auto max-w-md text-xl text-zinc-400"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.4 }}
@@ -50,20 +49,14 @@ const NotFound: FC = () => {
           <Button
             asChild
             size="lg"
-            className="rounded-lg border-2 border-indigo-600 bg-indigo-600 text-zinc-200 hover:bg-transparent"
+            className="rounded-lg border-2 border-indigo-600 bg-indigo-600 text-zinc-100 hover:bg-transparent"
           >
-            <Link href="/" className="text-base">
+            <Link href="/" className="text-base font-semibold">
               Go back home
             </Link>
           </Button>
         </motion.div>
       </div>
-      <motion.div
-        className="absolute bottom-8 text-zinc-400 lg:text-sm"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.5, delay: 0.8 }}
-      ></motion.div>
     </main>
   );
 };

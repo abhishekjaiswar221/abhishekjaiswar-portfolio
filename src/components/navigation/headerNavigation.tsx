@@ -18,10 +18,7 @@ const HeaderNavigation: FC = () => {
               />
             </div>
             <div>
-              <Link
-                href={"/"}
-                className="font-semibold lg:text-zinc-400 lg:hover:text-zinc-200"
-              >
+              <Link href={"/"} className="font-semibold">
                 Abhishek Jaiswar
               </Link>
             </div>

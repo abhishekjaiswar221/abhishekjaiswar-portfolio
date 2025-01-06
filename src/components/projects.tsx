@@ -44,7 +44,7 @@ const Projects: FC = () => {
       <div className="text-center">
         <Button
           asChild
-          className="rounded-lg border-2 border-indigo-600 bg-indigo-600 text-zinc-200 hover:bg-transparent"
+          className="rounded-lg border-2 border-indigo-600 bg-indigo-600 text-zinc-100 hover:bg-transparent"
         >
           <Link href="/projects">More Projects</Link>
         </Button>

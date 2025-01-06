@@ -32,7 +32,7 @@ const Page: FC = (): JSX.Element => {
         <Button
           asChild
           variant="default"
-          className="bg-transparent px-0 shadow-none hover:bg-zinc-900 hover:text-indigo-400"
+          className="bg-transparent px-0 shadow-none hover:bg-zinc-950 hover:text-indigo-400"
         >
           <Link href="/">
             <ChevronLeft size={20} strokeWidth={1.5} />

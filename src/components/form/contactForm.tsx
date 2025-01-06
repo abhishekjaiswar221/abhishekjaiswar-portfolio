@@ -130,7 +130,7 @@ const ContactForm: React.FC = () => {
         <Button
           type="submit"
           disabled={loading}
-          className="w-full rounded-lg border-2 border-indigo-600 bg-indigo-600 text-zinc-200 hover:bg-transparent"
+          className="w-full rounded-lg border-2 border-indigo-600 bg-indigo-600 text-zinc-100 hover:bg-transparent"
         >
           {loading ? (
             <ClipLoader

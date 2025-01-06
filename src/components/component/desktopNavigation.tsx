@@ -19,7 +19,7 @@ interface NavLink {
 
 const DesktopNavigation: FC = () => {
   return (
-    <NavigationMenu className="hidden text-zinc-400 lg:block">
+    <NavigationMenu className="hidden lg:block">
       <NavigationMenuList className="space-x-4">
         {navLinks.map(({ name, path }: NavLink, index: number) => {
           return (
@@ -28,7 +28,7 @@ const DesktopNavigation: FC = () => {
                 asChild
                 className={cn(
                   navigationMenuTriggerStyle(),
-                  "rounded-xl bg-zinc-800 p-2 hover:bg-zinc-700 hover:text-zinc-200 focus:bg-transparent focus:text-zinc-200"
+                  "rounded-xl bg-zinc-800 p-2 hover:bg-zinc-700 hover:text-zinc-100 focus:bg-transparent focus:text-zinc-100"
                 )}
               >
                 <Link href={path}>{name}</Link>
